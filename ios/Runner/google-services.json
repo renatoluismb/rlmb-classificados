@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "739084316807",
+    "firebase_url": "https://rlmb-compravenda-ag.firebaseio.com",
+    "project_id": "rlmb-compravenda-ag",
+    "storage_bucket": "rlmb-compravenda-ag.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739084316807:android:22ea87a65397755ffb0822",
+        "android_client_info": {
+          "package_name": "com.rlmb.cvag"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739084316807-82qb5g3f9cekcdm5abk0nvq28kja4dtn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZsXeOr7EqELdot4cYIECNZlS1rklLwt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739084316807-82qb5g3f9cekcdm5abk0nvq28kja4dtn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "739084316807-jadqrbtj8d65336siahhukrgvdjg9l78.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rlmb.cvag"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
