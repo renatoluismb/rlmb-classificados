@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>739084316807-jadqrbtj8d65336siahhukrgvdjg9l78.apps.googleusercontent.com</string>
+	<string>13931487214-ls5ri1dupelmvkrm1hk20cooiehh6vnn.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.739084316807-jadqrbtj8d65336siahhukrgvdjg9l78</string>
+	<string>com.googleusercontent.apps.13931487214-ls5ri1dupelmvkrm1hk20cooiehh6vnn</string>
 	<key>API_KEY</key>
-	<string>AIzaSyA2nLSkSWYv2Un-1y7hlRiXMumhEOlyxW0</string>
+	<string>AIzaSyABw9SuNglwsWZCKN4X0lcgt3t-TtmP_5k</string>
 	<key>GCM_SENDER_ID</key>
-	<string>739084316807</string>
+	<string>13931487214</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.rlmb.cvag</string>
 	<key>PROJECT_ID</key>
-	<string>rlmb-compravenda-ag</string>
+	<string>rlmb---classificados</string>
 	<key>STORAGE_BUCKET</key>
-	<string>rlmb-compravenda-ag.appspot.com</string>
+	<string>rlmb---classificados.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:739084316807:ios:69fcdf7405a1a7c4fb0822</string>
+	<string>1:13931487214:ios:8fdc4eebda22162fcb78ff</string>
 	<key>DATABASE_URL</key>
-	<string>https://rlmb-compravenda-ag.firebaseio.com</string>
+	<string>https://rlmb---classificados.firebaseio.com</string>
 </dict>
 </plist>
