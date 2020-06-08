@@ -1,0 +1,32 @@
+dependencies: \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/AuthProvider/OAuth/FIROAuthProvider.m \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/build/Pods.build/Debug-iphonesimulator/FirebaseAuth.build/module.modulemap \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FIRFacebookAuthProvider.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FIROAuthCredential.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FIRAuthCredential.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FIROAuthProvider.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FIRFederatedAuthProvider.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FIRAuthUIDelegate.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/build/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIROptions.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIRLoggerLevel.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIRConfiguration.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIRApp.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Auth/FIRAuthGlobalWorkQueue.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Auth/FIRAuth_Internal.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FIRAuth.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FIRAuthErrors.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FIRAuthAPNSTokenType.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/Headers/Public/FirebaseAuthInterop/FIRAuthInterop.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/AuthProvider/OAuth/FIROAuthCredential_Internal.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/FIRAuthBackend.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/FIRAuthRPCRequest.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/FIRAuthRPCResponse.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Backend/FIRAuthRequestConfiguration.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Utilities/FIRAuthErrorUtils.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Public/FIRMultiFactorInfo.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Utilities/FIRAuthInternalErrors.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Utilities/FIRAuthWebUtils.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseAuth/FirebaseAuth/Sources/Utilities/FIRAuthURLPresenter.h

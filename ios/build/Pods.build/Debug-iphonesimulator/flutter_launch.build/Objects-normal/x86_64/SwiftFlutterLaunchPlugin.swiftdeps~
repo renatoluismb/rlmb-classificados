@@ -1,0 +1,586 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SwiftFlutterLaunchPlugin"
+provides-nominal:
+- "14flutter_launch24SwiftFlutterLaunchPluginC"
+provides-member:
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", ""]
+provides-dynamic-lookup:
+- "handle"
+- "register"
+- "schemeAvailable"
+depends-top-level:
+- !private "=="
+- !private "??"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "Dictionary"
+- !private "FloatLiteralType"
+- "FlutterMethodCall"
+- !private "FlutterMethodChannel"
+- "FlutterPlugin"
+- "FlutterPluginRegistrar"
+- "FlutterResult"
+- !private "IntegerLiteralType"
+- "NSObject"
+- !private "NSURL"
+- "String"
+- !private "StringLiteralType"
+- "SwiftFlutterLaunchPlugin"
+- !private "UIApplication"
+- !private "URL"
+- !private "UnicodeScalarType"
+- !private "~="
+depends-member:
+- !private ["SK", "addingPercentEncoding"]
+- !private ["s7CVarArgP", "FlutterMethodChannel"]
+- !private ["s7CVarArgP", "NSURL"]
+- !private ["s7CVarArgP", "SwiftFlutterLaunchPlugin"]
+- !private ["s7CVarArgP", "UIApplication"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "addingPercentEncoding"]
+- ["s7CVarArgP", "application"]
+- ["s7CVarArgP", "applicationDidBecomeActive"]
+- ["s7CVarArgP", "applicationDidEnterBackground"]
+- ["s7CVarArgP", "applicationWillEnterForeground"]
+- ["s7CVarArgP", "applicationWillResignActive"]
+- ["s7CVarArgP", "applicationWillTerminate"]
+- !private ["s7CVarArgP", "arguments"]
+- !private ["s7CVarArgP", "canOpenURL"]
+- ["s7CVarArgP", "detachFromEngine"]
+- ["s7CVarArgP", "detachFromEngineForRegistrar"]
+- ["s7CVarArgP", "handle"]
+- ["s7CVarArgP", "handleMethodCall"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "method"]
+- !private ["s7CVarArgP", "openURL"]
+- ["s7CVarArgP", "register"]
+- ["s7CVarArgP", "registerWithRegistrar"]
+- !private ["s7CVarArgP", "schemeAvailable"]
+- ["s7CVarArgP", "setPluginRegistrantCallback"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "subscript"]
+- ["s7CVarArgP", "userNotificationCenter"]
+- !private ["10Foundation12CharacterSetV", "urlQueryAllowed"]
+- !private ["Sl", "addingPercentEncoding"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "addingPercentEncoding"]
+- !private ["s28CustomDebugStringConvertibleP", "FlutterMethodChannel"]
+- !private ["s28CustomDebugStringConvertibleP", "NSURL"]
+- !private ["s28CustomDebugStringConvertibleP", "SwiftFlutterLaunchPlugin"]
+- !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "addingPercentEncoding"]
+- ["s28CustomDebugStringConvertibleP", "application"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidBecomeActive"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidEnterBackground"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillEnterForeground"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillResignActive"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
+- !private ["s28CustomDebugStringConvertibleP", "arguments"]
+- !private ["s28CustomDebugStringConvertibleP", "canOpenURL"]
+- ["s28CustomDebugStringConvertibleP", "detachFromEngine"]
+- ["s28CustomDebugStringConvertibleP", "detachFromEngineForRegistrar"]
+- ["s28CustomDebugStringConvertibleP", "handle"]
+- ["s28CustomDebugStringConvertibleP", "handleMethodCall"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "method"]
+- !private ["s28CustomDebugStringConvertibleP", "openURL"]
+- ["s28CustomDebugStringConvertibleP", "register"]
+- ["s28CustomDebugStringConvertibleP", "registerWithRegistrar"]
+- !private ["s28CustomDebugStringConvertibleP", "schemeAvailable"]
+- ["s28CustomDebugStringConvertibleP", "setPluginRegistrantCallback"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "urlQueryAllowed"]
+- ["s28CustomDebugStringConvertibleP", "userNotificationCenter"]
+- !private ["s17CustomReflectableP", "addingPercentEncoding"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "FlutterMethodChannel"]
+- !private ["s23CustomStringConvertibleP", "NSURL"]
+- !private ["s23CustomStringConvertibleP", "SwiftFlutterLaunchPlugin"]
+- !private ["s23CustomStringConvertibleP", "UIApplication"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "addingPercentEncoding"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- ["s23CustomStringConvertibleP", "application"]
+- ["s23CustomStringConvertibleP", "applicationDidBecomeActive"]
+- ["s23CustomStringConvertibleP", "applicationDidEnterBackground"]
+- ["s23CustomStringConvertibleP", "applicationWillEnterForeground"]
+- ["s23CustomStringConvertibleP", "applicationWillResignActive"]
+- ["s23CustomStringConvertibleP", "applicationWillTerminate"]
+- !private ["s23CustomStringConvertibleP", "arguments"]
+- !private ["s23CustomStringConvertibleP", "canOpenURL"]
+- ["s23CustomStringConvertibleP", "detachFromEngine"]
+- ["s23CustomStringConvertibleP", "detachFromEngineForRegistrar"]
+- ["s23CustomStringConvertibleP", "handle"]
+- ["s23CustomStringConvertibleP", "handleMethodCall"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "method"]
+- !private ["s23CustomStringConvertibleP", "openURL"]
+- ["s23CustomStringConvertibleP", "register"]
+- ["s23CustomStringConvertibleP", "registerWithRegistrar"]
+- !private ["s23CustomStringConvertibleP", "schemeAvailable"]
+- ["s23CustomStringConvertibleP", "setPluginRegistrantCallback"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "urlQueryAllowed"]
+- ["s23CustomStringConvertibleP", "userNotificationCenter"]
+- !private ["Se", "addingPercentEncoding"]
+- !private ["Se", "subscript"]
+- !private ["Se", "urlQueryAllowed"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SD", "subscript"]
+- !private ["SE", "addingPercentEncoding"]
+- !private ["SE", "subscript"]
+- !private ["SE", "urlQueryAllowed"]
+- !private ["SQ", "FlutterMethodChannel"]
+- !private ["SQ", "NSURL"]
+- !private ["SQ", "SwiftFlutterLaunchPlugin"]
+- !private ["SQ", "UIApplication"]
+- ["SQ", ""]
+- !private ["SQ", "addingPercentEncoding"]
+- ["SQ", "application"]
+- ["SQ", "applicationDidBecomeActive"]
+- ["SQ", "applicationDidEnterBackground"]
+- ["SQ", "applicationWillEnterForeground"]
+- ["SQ", "applicationWillResignActive"]
+- ["SQ", "applicationWillTerminate"]
+- !private ["SQ", "arguments"]
+- !private ["SQ", "canOpenURL"]
+- ["SQ", "detachFromEngine"]
+- ["SQ", "detachFromEngineForRegistrar"]
+- ["SQ", "handle"]
+- ["SQ", "handleMethodCall"]
+- !private ["SQ", "init"]
+- !private ["SQ", "method"]
+- !private ["SQ", "openURL"]
+- ["SQ", "register"]
+- ["SQ", "registerWithRegistrar"]
+- !private ["SQ", "schemeAvailable"]
+- ["SQ", "setPluginRegistrantCallback"]
+- !private ["SQ", "shared"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "urlQueryAllowed"]
+- ["SQ", "userNotificationCenter"]
+- !private ["s25ExpressibleByArrayLiteralP", "urlQueryAllowed"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "addingPercentEncoding"]
+- !private ["s32ExpressibleByStringInterpolationP", "addingPercentEncoding"]
+- !private ["s26ExpressibleByStringLiteralP", "addingPercentEncoding"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "addingPercentEncoding"]
+- !private ["So35FlutterApplicationLifeCycleDelegateP", "FlutterMethodChannel"]
+- !private ["So35FlutterApplicationLifeCycleDelegateP", "NSURL"]
+- !private ["So35FlutterApplicationLifeCycleDelegateP", "SwiftFlutterLaunchPlugin"]
+- !private ["So35FlutterApplicationLifeCycleDelegateP", "UIApplication"]
+- ["So35FlutterApplicationLifeCycleDelegateP", ""]
+- ["So35FlutterApplicationLifeCycleDelegateP", "application"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "applicationDidBecomeActive"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "applicationDidEnterBackground"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "applicationWillEnterForeground"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "applicationWillResignActive"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "applicationWillTerminate"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "detachFromEngine"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "detachFromEngineForRegistrar"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "handle"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "handleMethodCall"]
+- !private ["So35FlutterApplicationLifeCycleDelegateP", "init"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "register"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "registerWithRegistrar"]
+- !private ["So35FlutterApplicationLifeCycleDelegateP", "schemeAvailable"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "setPluginRegistrantCallback"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "userNotificationCenter"]
+- !private ["So17FlutterMethodCallC", "arguments"]
+- !private ["So17FlutterMethodCallC", "method"]
+- !private ["So20FlutterMethodChannelC", "init"]
+- !private ["So13FlutterPluginP", "FlutterMethodChannel"]
+- !private ["So13FlutterPluginP", "NSURL"]
+- !private ["So13FlutterPluginP", "SwiftFlutterLaunchPlugin"]
+- !private ["So13FlutterPluginP", "UIApplication"]
+- ["So13FlutterPluginP", ""]
+- ["So13FlutterPluginP", "application"]
+- ["So13FlutterPluginP", "applicationDidBecomeActive"]
+- ["So13FlutterPluginP", "applicationDidEnterBackground"]
+- ["So13FlutterPluginP", "applicationWillEnterForeground"]
+- ["So13FlutterPluginP", "applicationWillResignActive"]
+- ["So13FlutterPluginP", "applicationWillTerminate"]
+- ["So13FlutterPluginP", "detachFromEngine"]
+- ["So13FlutterPluginP", "detachFromEngineForRegistrar"]
+- ["So13FlutterPluginP", "handle"]
+- ["So13FlutterPluginP", "handleMethodCall"]
+- !private ["So13FlutterPluginP", "init"]
+- ["So13FlutterPluginP", "register"]
+- ["So13FlutterPluginP", "registerWithRegistrar"]
+- !private ["So13FlutterPluginP", "schemeAvailable"]
+- ["So13FlutterPluginP", "setPluginRegistrantCallback"]
+- ["So13FlutterPluginP", "userNotificationCenter"]
+- !private ["So22FlutterPluginRegistrarP", "addMethodCallDelegate"]
+- !private ["So22FlutterPluginRegistrarP", "messenger"]
+- !private ["SH", "FlutterMethodChannel"]
+- !private ["SH", "NSURL"]
+- !private ["SH", "SwiftFlutterLaunchPlugin"]
+- !private ["SH", "UIApplication"]
+- ["SH", ""]
+- !private ["SH", "addingPercentEncoding"]
+- ["SH", "application"]
+- ["SH", "applicationDidBecomeActive"]
+- ["SH", "applicationDidEnterBackground"]
+- ["SH", "applicationWillEnterForeground"]
+- ["SH", "applicationWillResignActive"]
+- ["SH", "applicationWillTerminate"]
+- !private ["SH", "arguments"]
+- !private ["SH", "canOpenURL"]
+- ["SH", "detachFromEngine"]
+- ["SH", "detachFromEngineForRegistrar"]
+- ["SH", "handle"]
+- ["SH", "handleMethodCall"]
+- !private ["SH", "init"]
+- !private ["SH", "method"]
+- !private ["SH", "openURL"]
+- ["SH", "register"]
+- ["SH", "registerWithRegistrar"]
+- !private ["SH", "schemeAvailable"]
+- ["SH", "setPluginRegistrantCallback"]
+- !private ["SH", "shared"]
+- !private ["SH", "subscript"]
+- !private ["SH", "urlQueryAllowed"]
+- ["SH", "userNotificationCenter"]
+- !private ["s25LosslessStringConvertibleP", "addingPercentEncoding"]
+- !private ["s10MirrorPathP", "addingPercentEncoding"]
+- !private ["So8NSCodingP", "addingPercentEncoding"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "addingPercentEncoding"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "addingPercentEncoding"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "addingPercentEncoding"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "addingPercentEncoding"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "Dictionary"]
+- ["So8NSObjectC", "FlutterMethodCall"]
+- !private ["So8NSObjectC", "FlutterMethodChannel"]
+- ["So8NSObjectC", "FlutterPluginRegistrar"]
+- ["So8NSObjectC", "FlutterResult"]
+- !private ["So8NSObjectC", "NSURL"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "SwiftFlutterLaunchPlugin"]
+- !private ["So8NSObjectC", "UIApplication"]
+- !private ["So8NSObjectC", "URL"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "addingPercentEncoding"]
+- ["So8NSObjectC", "application"]
+- ["So8NSObjectC", "applicationDidBecomeActive"]
+- ["So8NSObjectC", "applicationDidEnterBackground"]
+- ["So8NSObjectC", "applicationWillEnterForeground"]
+- ["So8NSObjectC", "applicationWillResignActive"]
+- ["So8NSObjectC", "applicationWillTerminate"]
+- !private ["So8NSObjectC", "arguments"]
+- !private ["So8NSObjectC", "canOpenURL"]
+- ["So8NSObjectC", "detachFromEngine"]
+- ["So8NSObjectC", "detachFromEngineForRegistrar"]
+- ["So8NSObjectC", "handle"]
+- ["So8NSObjectC", "handleMethodCall"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "method"]
+- !private ["So8NSObjectC", "openURL"]
+- ["So8NSObjectC", "register"]
+- ["So8NSObjectC", "registerWithRegistrar"]
+- ["So8NSObjectC", "schemeAvailable"]
+- ["So8NSObjectC", "setPluginRegistrantCallback"]
+- !private ["So8NSObjectC", "shared"]
+- ["So8NSObjectC", "userNotificationCenter"]
+- !private ["So8NSObjectP", "FlutterMethodChannel"]
+- !private ["So8NSObjectP", "NSURL"]
+- !private ["So8NSObjectP", "SwiftFlutterLaunchPlugin"]
+- !private ["So8NSObjectP", "UIApplication"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addMethodCallDelegate"]
+- !private ["So8NSObjectP", "addingPercentEncoding"]
+- ["So8NSObjectP", "application"]
+- ["So8NSObjectP", "applicationDidBecomeActive"]
+- ["So8NSObjectP", "applicationDidEnterBackground"]
+- ["So8NSObjectP", "applicationWillEnterForeground"]
+- ["So8NSObjectP", "applicationWillResignActive"]
+- ["So8NSObjectP", "applicationWillTerminate"]
+- !private ["So8NSObjectP", "arguments"]
+- !private ["So8NSObjectP", "canOpenURL"]
+- ["So8NSObjectP", "detachFromEngine"]
+- ["So8NSObjectP", "detachFromEngineForRegistrar"]
+- ["So8NSObjectP", "handle"]
+- ["So8NSObjectP", "handleMethodCall"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "messenger"]
+- !private ["So8NSObjectP", "method"]
+- !private ["So8NSObjectP", "openURL"]
+- ["So8NSObjectP", "register"]
+- ["So8NSObjectP", "registerWithRegistrar"]
+- !private ["So8NSObjectP", "schemeAvailable"]
+- ["So8NSObjectP", "setPluginRegistrantCallback"]
+- !private ["So8NSObjectP", "shared"]
+- ["So8NSObjectP", "userNotificationCenter"]
+- !private ["So14NSSecureCodingP", "addingPercentEncoding"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "addingPercentEncoding"]
+- !private ["So5NSURLC", "init"]
+- !private ["Sm", "addingPercentEncoding"]
+- !private ["10Foundation20ReferenceConvertibleP", "urlQueryAllowed"]
+- !private ["ST", "addingPercentEncoding"]
+- !private ["ST", "subscript"]
+- !private ["s10SetAlgebraP", "urlQueryAllowed"]
+- !private ["SS", "addingPercentEncoding"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "addingPercentEncoding"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "Bool"]
+- !private ["14flutter_launch24SwiftFlutterLaunchPluginC", "Dictionary"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "FlutterMethodCall"]
+- !private ["14flutter_launch24SwiftFlutterLaunchPluginC", "FlutterMethodChannel"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "FlutterPluginRegistrar"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "FlutterResult"]
+- !private ["14flutter_launch24SwiftFlutterLaunchPluginC", "NSURL"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "String"]
+- !private ["14flutter_launch24SwiftFlutterLaunchPluginC", "SwiftFlutterLaunchPlugin"]
+- !private ["14flutter_launch24SwiftFlutterLaunchPluginC", "UIApplication"]
+- !private ["14flutter_launch24SwiftFlutterLaunchPluginC", "URL"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "application"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "applicationDidBecomeActive"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "applicationDidEnterBackground"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "applicationWillEnterForeground"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "applicationWillResignActive"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "applicationWillTerminate"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "deinit"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "detachFromEngine"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "detachFromEngineForRegistrar"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "handle"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "handleMethodCall"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "init"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "register"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "registerWithRegistrar"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "schemeAvailable"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "setPluginRegistrantCallback"]
+- ["14flutter_launch24SwiftFlutterLaunchPluginC", "userNotificationCenter"]
+- !private ["s16TextOutputStreamP", "addingPercentEncoding"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s20TextOutputStreamableP", "addingPercentEncoding"]
+- !private ["So13UIApplicationC", "canOpenURL"]
+- !private ["So13UIApplicationC", "openURL"]
+- !private ["So13UIApplicationC", "shared"]
+- !private ["So30UIPasteConfigurationSupportingP", "canOpenURL"]
+- !private ["So30UIPasteConfigurationSupportingP", "openURL"]
+- !private ["So30UIPasteConfigurationSupportingP", "shared"]
+- !private ["So11UIResponderC", "canOpenURL"]
+- !private ["So11UIResponderC", "openURL"]
+- !private ["So11UIResponderC", "shared"]
+- !private ["So30UIResponderStandardEditActionsP", "canOpenURL"]
+- !private ["So30UIResponderStandardEditActionsP", "openURL"]
+- !private ["So30UIResponderStandardEditActionsP", "shared"]
+- !private ["So23UIUserActivityRestoringP", "canOpenURL"]
+- !private ["So23UIUserActivityRestoringP", "openURL"]
+- !private ["So23UIUserActivityRestoringP", "shared"]
+- !private ["So32UNUserNotificationCenterDelegateP", "FlutterMethodChannel"]
+- !private ["So32UNUserNotificationCenterDelegateP", "NSURL"]
+- !private ["So32UNUserNotificationCenterDelegateP", "SwiftFlutterLaunchPlugin"]
+- !private ["So32UNUserNotificationCenterDelegateP", "UIApplication"]
+- ["So32UNUserNotificationCenterDelegateP", ""]
+- ["So32UNUserNotificationCenterDelegateP", "application"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationDidBecomeActive"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationDidEnterBackground"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationWillEnterForeground"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationWillResignActive"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationWillTerminate"]
+- ["So32UNUserNotificationCenterDelegateP", "detachFromEngine"]
+- ["So32UNUserNotificationCenterDelegateP", "detachFromEngineForRegistrar"]
+- ["So32UNUserNotificationCenterDelegateP", "handle"]
+- ["So32UNUserNotificationCenterDelegateP", "handleMethodCall"]
+- !private ["So32UNUserNotificationCenterDelegateP", "init"]
+- ["So32UNUserNotificationCenterDelegateP", "register"]
+- ["So32UNUserNotificationCenterDelegateP", "registerWithRegistrar"]
+- !private ["So32UNUserNotificationCenterDelegateP", "schemeAvailable"]
+- ["So32UNUserNotificationCenterDelegateP", "setPluginRegistrantCallback"]
+- ["So32UNUserNotificationCenterDelegateP", "userNotificationCenter"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "addingPercentEncoding"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "addingPercentEncoding"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "addingPercentEncoding"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "addingPercentEncoding"]
+- !private ["s19_HasContiguousBytesP", "addingPercentEncoding"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "addingPercentEncoding"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FlutterMethodChannel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSURL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SwiftFlutterLaunchPlugin"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addingPercentEncoding"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "application"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidBecomeActive"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidEnterBackground"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillEnterForeground"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillResignActive"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "arguments"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "canOpenURL"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "detachFromEngine"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "detachFromEngineForRegistrar"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "handle"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "handleMethodCall"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "method"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "openURL"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "register"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "registerWithRegistrar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "schemeAvailable"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "setPluginRegistrantCallback"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "userNotificationCenter"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "FlutterMethodChannel"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSURL"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SwiftFlutterLaunchPlugin"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIApplication"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addingPercentEncoding"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "application"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationDidBecomeActive"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationDidEnterBackground"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationWillEnterForeground"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationWillResignActive"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationWillTerminate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "arguments"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "canOpenURL"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "detachFromEngine"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "detachFromEngineForRegistrar"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "handle"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "handleMethodCall"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "method"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "openURL"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "register"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "registerWithRegistrar"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "schemeAvailable"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setPluginRegistrantCallback"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "userNotificationCenter"]
+- !private ["s21_ObjectiveCBridgeableP", "addingPercentEncoding"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "urlQueryAllowed"]
+depends-nominal:
+- !private "SK"
+- "s7CVarArgP"
+- !private "10Foundation12CharacterSetV"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SD"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "So35FlutterApplicationLifeCycleDelegateP"
+- !private "So17FlutterMethodCallC"
+- !private "So20FlutterMethodChannelC"
+- "So13FlutterPluginP"
+- !private "So22FlutterPluginRegistrarP"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "So5NSURLC"
+- !private "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
+- !private "s10SetAlgebraP"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- "14flutter_launch24SwiftFlutterLaunchPluginC"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So13UIApplicationC"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So23UIUserActivityRestoringP"
+- "So32UNUserNotificationCenterDelegateP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMedia.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreAudio.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/Target Support Files/flutter_launch/flutter_launch-umbrella.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterCallbackCache.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterEngine.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterTexture.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterPluginAppLifeCycleDelegate.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterAppDelegate.h"
+- "/Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launch-0.2.0/ios/Classes/FlutterLaunchPlugin.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterPlugin.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterBinaryMessenger.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterViewController.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterHeadlessDartRunner.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/Flutter.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterCodecs.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterChannels.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterMacros.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterPlatformViews.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterDartProject.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/build/Pods.build/Debug-iphonesimulator/flutter_launch.build/unextended-module.modulemap"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "f523bf372074272b07b95dfc611782cc"

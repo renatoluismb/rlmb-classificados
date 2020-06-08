@@ -1,0 +1,37 @@
+dependencies: \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/PermissionHandlerPlugin.m \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/build/Pods.build/Debug-iphonesimulator/permission_handler.build/module.modulemap \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/Target\ Support\ Files/permission_handler/permission_handler-prefix.pch \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/PermissionHandlerPlugin.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Modules/module.modulemap \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterTexture.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterPlugin.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterEngine.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterDartProject.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterBinaryMessenger.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterViewController.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterPluginAppLifeCycleDelegate.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterPlatformViews.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterHeadlessDartRunner.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterChannels.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterCallbackCache.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterCodecs.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterMacros.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterAppDelegate.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/Flutter.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/PermissionManager.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/strategies/AudioVideoPermissionStrategy.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/strategies/PermissionStrategy.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/PermissionHandlerEnums.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/strategies/ContactPermissionStrategy.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/strategies/EventPermissionStrategy.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/strategies/LocationPermissionStrategy.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/strategies/MediaLibraryPermissionStrategy.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/strategies/PhonePermissionStrategy.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/strategies/PhotoPermissionStrategy.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/strategies/SensorPermissionStrategy.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/strategies/SpeechPermissionStrategy.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/strategies/StoragePermissionStrategy.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/strategies/UnknownPermissionStrategy.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/strategies/NotificationPermissionStrategy.h \
+  /Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-4.4.0+hotfix.4/ios/Classes/util/Codec.h

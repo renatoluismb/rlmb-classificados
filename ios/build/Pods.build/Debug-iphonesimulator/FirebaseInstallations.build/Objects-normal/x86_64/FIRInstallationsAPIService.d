@@ -1,0 +1,45 @@
+dependencies: \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsAPIService.m \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/build/Pods.build/Debug-iphonesimulator/FirebaseInstallations.build/module.modulemap \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsAPIService.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FIRInstallationsVersion.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromises.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/build/Pods.build/Debug-iphonesimulator/PromisesObjC.build/module.modulemap \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Wrap.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Validate.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Timeout.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Then.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Testing.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Retry.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Reduce.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Recover.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Race.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Do.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Delay.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Catch.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Await.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Async.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Any.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Always.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromiseError.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+All.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/Target\ Support\ Files/PromisesObjC/PromisesObjC-umbrella.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/build/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRAppInternal.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIROptions.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIRLoggerLevel.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIRConfiguration.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIRApp.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRErrors.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRErrorCode.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRHeartbeatInfo.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Errors/FIRInstallationsErrorUtil.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FIRInstallationsErrors.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsItem+RegisterInstallationAPI.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsItem.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsStatus.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsLogger.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRLogger.h

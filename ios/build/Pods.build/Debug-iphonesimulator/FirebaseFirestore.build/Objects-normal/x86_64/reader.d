@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseFirestore/Firestore/core/src/nanopb/reader.cc \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseFirestore/Firestore/core/src/nanopb/reader.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/nanopb/pb.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/nanopb/pb_decode.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseFirestore/Firestore/core/include/firebase/firestore/firestore_errors.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseFirestore/Firestore/core/src/nanopb/byte_string.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseFirestore/Firestore/core/src/util/comparison.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/abseil/absl.framework/Headers/meta/type_traits.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/abseil/absl.framework/Headers/base/config.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/abseil/absl.framework/Headers/base/options.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/abseil/absl.framework/Headers/base/policy_checks.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/abseil/absl.framework/Headers/strings/string_view.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/abseil/absl.framework/Headers/base/internal/throw_delegate.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/abseil/absl.framework/Headers/base/macros.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/abseil/absl.framework/Headers/base/attributes.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/abseil/absl.framework/Headers/base/optimization.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/abseil/absl.framework/Headers/base/port.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseFirestore/Firestore/core/src/util/status.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseFirestore/Firestore/core/src/util/status_fwd.h

@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "35a2a9119e0bbb1d27a7c27f59921440"
+build_time: [1591622413, 644639000]
+inputs:
+  "/Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/validadores-1.0.2/ios/Classes/SwiftValidadoresPlugin.swift": [1581511029, 0]

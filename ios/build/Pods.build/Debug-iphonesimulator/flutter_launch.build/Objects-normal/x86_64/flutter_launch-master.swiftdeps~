@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "acd582d571e638d1bd29e941d8b6c982"
+build_time: [1591622414, 585790000]
+inputs:
+  "/Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launch-0.2.0/ios/Classes/SwiftFlutterLaunchPlugin.swift": [1558394542, 0]

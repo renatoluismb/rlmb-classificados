@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/build/ios/Debug-iphonesimulator/validadores/validadores.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/build/Pods.build/Debug-iphonesimulator/validadores.build/unextended-module.modulemap",
+    }]
+  }]
+}

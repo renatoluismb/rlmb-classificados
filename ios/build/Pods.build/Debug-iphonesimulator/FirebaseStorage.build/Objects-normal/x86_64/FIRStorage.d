@@ -1,0 +1,40 @@
+dependencies: \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/FIRStorage.m \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/build/Pods.build/Debug-iphonesimulator/FirebaseStorage.build/module.modulemap \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/Public/FIRStorage.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/Public/FIRStorageConstants.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/Public/FIRStorageReference.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/Public/FIRStorageDownloadTask.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/Public/FIRStorageObservableTask.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/Public/FIRStorageTask.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/Public/FIRStorageMetadata.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/Public/FIRStorageListResult.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/Public/FIRStorageUploadTask.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/FIRStorageComponent.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/FIRStorageConstants_Private.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/FIRStoragePath.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/FIRStorageReference_Private.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/FIRStorageTokenAuthorizer.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/build/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/GTMSessionFetcher/Source/GTMSessionFetcherService.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/Target\ Support\ Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/FIRStorageUtils.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseStorage/FirebaseStorage/Sources/FIRStorage_Private.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/Headers/Public/FirebaseAuthInterop/FIRAuthInterop.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/build/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRAppInternal.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIROptions.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIRLoggerLevel.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIRConfiguration.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIRApp.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRErrors.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRErrorCode.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRComponentContainer.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRComponentType.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRLibrary.h \
+  /Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRComponent.h

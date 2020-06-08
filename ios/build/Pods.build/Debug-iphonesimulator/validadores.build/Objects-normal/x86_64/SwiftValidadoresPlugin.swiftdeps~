@@ -1,0 +1,369 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SwiftValidadoresPlugin"
+provides-nominal:
+- "11validadores22SwiftValidadoresPluginC"
+provides-member:
+- ["11validadores22SwiftValidadoresPluginC", ""]
+provides-dynamic-lookup:
+- "handle"
+- "register"
+depends-top-level:
+- !private "+"
+- "FlutterMethodCall"
+- !private "FlutterMethodChannel"
+- "FlutterPlugin"
+- "FlutterPluginRegistrar"
+- "FlutterResult"
+- "NSObject"
+- !private "StringLiteralType"
+- "SwiftValidadoresPlugin"
+- !private "UIDevice"
+depends-member:
+- !private ["s7CVarArgP", "FlutterMethodChannel"]
+- !private ["s7CVarArgP", "SwiftValidadoresPlugin"]
+- !private ["s7CVarArgP", "UIDevice"]
+- ["s7CVarArgP", ""]
+- ["s7CVarArgP", "application"]
+- ["s7CVarArgP", "applicationDidBecomeActive"]
+- ["s7CVarArgP", "applicationDidEnterBackground"]
+- ["s7CVarArgP", "applicationWillEnterForeground"]
+- ["s7CVarArgP", "applicationWillResignActive"]
+- ["s7CVarArgP", "applicationWillTerminate"]
+- !private ["s7CVarArgP", "current"]
+- ["s7CVarArgP", "detachFromEngine"]
+- ["s7CVarArgP", "detachFromEngineForRegistrar"]
+- ["s7CVarArgP", "handle"]
+- ["s7CVarArgP", "handleMethodCall"]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "register"]
+- ["s7CVarArgP", "registerWithRegistrar"]
+- ["s7CVarArgP", "setPluginRegistrantCallback"]
+- !private ["s7CVarArgP", "systemVersion"]
+- ["s7CVarArgP", "userNotificationCenter"]
+- !private ["s28CustomDebugStringConvertibleP", "FlutterMethodChannel"]
+- !private ["s28CustomDebugStringConvertibleP", "SwiftValidadoresPlugin"]
+- !private ["s28CustomDebugStringConvertibleP", "UIDevice"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "application"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidBecomeActive"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidEnterBackground"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillEnterForeground"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillResignActive"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- ["s28CustomDebugStringConvertibleP", "detachFromEngine"]
+- ["s28CustomDebugStringConvertibleP", "detachFromEngineForRegistrar"]
+- ["s28CustomDebugStringConvertibleP", "handle"]
+- ["s28CustomDebugStringConvertibleP", "handleMethodCall"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "register"]
+- ["s28CustomDebugStringConvertibleP", "registerWithRegistrar"]
+- ["s28CustomDebugStringConvertibleP", "setPluginRegistrantCallback"]
+- !private ["s28CustomDebugStringConvertibleP", "systemVersion"]
+- ["s28CustomDebugStringConvertibleP", "userNotificationCenter"]
+- !private ["s23CustomStringConvertibleP", "FlutterMethodChannel"]
+- !private ["s23CustomStringConvertibleP", "SwiftValidadoresPlugin"]
+- !private ["s23CustomStringConvertibleP", "UIDevice"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "application"]
+- ["s23CustomStringConvertibleP", "applicationDidBecomeActive"]
+- ["s23CustomStringConvertibleP", "applicationDidEnterBackground"]
+- ["s23CustomStringConvertibleP", "applicationWillEnterForeground"]
+- ["s23CustomStringConvertibleP", "applicationWillResignActive"]
+- ["s23CustomStringConvertibleP", "applicationWillTerminate"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- ["s23CustomStringConvertibleP", "detachFromEngine"]
+- ["s23CustomStringConvertibleP", "detachFromEngineForRegistrar"]
+- ["s23CustomStringConvertibleP", "handle"]
+- ["s23CustomStringConvertibleP", "handleMethodCall"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "register"]
+- ["s23CustomStringConvertibleP", "registerWithRegistrar"]
+- ["s23CustomStringConvertibleP", "setPluginRegistrantCallback"]
+- !private ["s23CustomStringConvertibleP", "systemVersion"]
+- ["s23CustomStringConvertibleP", "userNotificationCenter"]
+- !private ["SQ", "FlutterMethodChannel"]
+- !private ["SQ", "SwiftValidadoresPlugin"]
+- !private ["SQ", "UIDevice"]
+- ["SQ", ""]
+- ["SQ", "application"]
+- ["SQ", "applicationDidBecomeActive"]
+- ["SQ", "applicationDidEnterBackground"]
+- ["SQ", "applicationWillEnterForeground"]
+- ["SQ", "applicationWillResignActive"]
+- ["SQ", "applicationWillTerminate"]
+- !private ["SQ", "current"]
+- ["SQ", "detachFromEngine"]
+- ["SQ", "detachFromEngineForRegistrar"]
+- ["SQ", "handle"]
+- ["SQ", "handleMethodCall"]
+- !private ["SQ", "init"]
+- ["SQ", "register"]
+- ["SQ", "registerWithRegistrar"]
+- ["SQ", "setPluginRegistrantCallback"]
+- !private ["SQ", "systemVersion"]
+- ["SQ", "userNotificationCenter"]
+- !private ["So35FlutterApplicationLifeCycleDelegateP", "FlutterMethodChannel"]
+- !private ["So35FlutterApplicationLifeCycleDelegateP", "SwiftValidadoresPlugin"]
+- !private ["So35FlutterApplicationLifeCycleDelegateP", "UIDevice"]
+- ["So35FlutterApplicationLifeCycleDelegateP", ""]
+- ["So35FlutterApplicationLifeCycleDelegateP", "application"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "applicationDidBecomeActive"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "applicationDidEnterBackground"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "applicationWillEnterForeground"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "applicationWillResignActive"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "applicationWillTerminate"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "detachFromEngine"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "detachFromEngineForRegistrar"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "handle"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "handleMethodCall"]
+- !private ["So35FlutterApplicationLifeCycleDelegateP", "init"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "register"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "registerWithRegistrar"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "setPluginRegistrantCallback"]
+- ["So35FlutterApplicationLifeCycleDelegateP", "userNotificationCenter"]
+- !private ["So20FlutterMethodChannelC", "init"]
+- !private ["So13FlutterPluginP", "FlutterMethodChannel"]
+- !private ["So13FlutterPluginP", "SwiftValidadoresPlugin"]
+- !private ["So13FlutterPluginP", "UIDevice"]
+- ["So13FlutterPluginP", ""]
+- ["So13FlutterPluginP", "application"]
+- ["So13FlutterPluginP", "applicationDidBecomeActive"]
+- ["So13FlutterPluginP", "applicationDidEnterBackground"]
+- ["So13FlutterPluginP", "applicationWillEnterForeground"]
+- ["So13FlutterPluginP", "applicationWillResignActive"]
+- ["So13FlutterPluginP", "applicationWillTerminate"]
+- ["So13FlutterPluginP", "detachFromEngine"]
+- ["So13FlutterPluginP", "detachFromEngineForRegistrar"]
+- ["So13FlutterPluginP", "handle"]
+- ["So13FlutterPluginP", "handleMethodCall"]
+- !private ["So13FlutterPluginP", "init"]
+- ["So13FlutterPluginP", "register"]
+- ["So13FlutterPluginP", "registerWithRegistrar"]
+- ["So13FlutterPluginP", "setPluginRegistrantCallback"]
+- ["So13FlutterPluginP", "userNotificationCenter"]
+- !private ["So22FlutterPluginRegistrarP", "addMethodCallDelegate"]
+- !private ["So22FlutterPluginRegistrarP", "messenger"]
+- !private ["SH", "FlutterMethodChannel"]
+- !private ["SH", "SwiftValidadoresPlugin"]
+- !private ["SH", "UIDevice"]
+- ["SH", ""]
+- ["SH", "application"]
+- ["SH", "applicationDidBecomeActive"]
+- ["SH", "applicationDidEnterBackground"]
+- ["SH", "applicationWillEnterForeground"]
+- ["SH", "applicationWillResignActive"]
+- ["SH", "applicationWillTerminate"]
+- !private ["SH", "current"]
+- ["SH", "detachFromEngine"]
+- ["SH", "detachFromEngineForRegistrar"]
+- ["SH", "handle"]
+- ["SH", "handleMethodCall"]
+- !private ["SH", "init"]
+- ["SH", "register"]
+- ["SH", "registerWithRegistrar"]
+- ["SH", "setPluginRegistrantCallback"]
+- !private ["SH", "systemVersion"]
+- ["SH", "userNotificationCenter"]
+- ["So8NSObjectC", "FlutterMethodCall"]
+- !private ["So8NSObjectC", "FlutterMethodChannel"]
+- ["So8NSObjectC", "FlutterPluginRegistrar"]
+- ["So8NSObjectC", "FlutterResult"]
+- !private ["So8NSObjectC", "SwiftValidadoresPlugin"]
+- !private ["So8NSObjectC", "UIDevice"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "application"]
+- ["So8NSObjectC", "applicationDidBecomeActive"]
+- ["So8NSObjectC", "applicationDidEnterBackground"]
+- ["So8NSObjectC", "applicationWillEnterForeground"]
+- ["So8NSObjectC", "applicationWillResignActive"]
+- ["So8NSObjectC", "applicationWillTerminate"]
+- !private ["So8NSObjectC", "current"]
+- ["So8NSObjectC", "detachFromEngine"]
+- ["So8NSObjectC", "detachFromEngineForRegistrar"]
+- ["So8NSObjectC", "handle"]
+- ["So8NSObjectC", "handleMethodCall"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "register"]
+- ["So8NSObjectC", "registerWithRegistrar"]
+- ["So8NSObjectC", "setPluginRegistrantCallback"]
+- !private ["So8NSObjectC", "systemVersion"]
+- ["So8NSObjectC", "userNotificationCenter"]
+- !private ["So8NSObjectP", "FlutterMethodChannel"]
+- !private ["So8NSObjectP", "SwiftValidadoresPlugin"]
+- !private ["So8NSObjectP", "UIDevice"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addMethodCallDelegate"]
+- ["So8NSObjectP", "application"]
+- ["So8NSObjectP", "applicationDidBecomeActive"]
+- ["So8NSObjectP", "applicationDidEnterBackground"]
+- ["So8NSObjectP", "applicationWillEnterForeground"]
+- ["So8NSObjectP", "applicationWillResignActive"]
+- ["So8NSObjectP", "applicationWillTerminate"]
+- !private ["So8NSObjectP", "current"]
+- ["So8NSObjectP", "detachFromEngine"]
+- ["So8NSObjectP", "detachFromEngineForRegistrar"]
+- ["So8NSObjectP", "handle"]
+- ["So8NSObjectP", "handleMethodCall"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "messenger"]
+- ["So8NSObjectP", "register"]
+- ["So8NSObjectP", "registerWithRegistrar"]
+- ["So8NSObjectP", "setPluginRegistrantCallback"]
+- !private ["So8NSObjectP", "systemVersion"]
+- ["So8NSObjectP", "userNotificationCenter"]
+- ["11validadores22SwiftValidadoresPluginC", "FlutterMethodCall"]
+- !private ["11validadores22SwiftValidadoresPluginC", "FlutterMethodChannel"]
+- ["11validadores22SwiftValidadoresPluginC", "FlutterPluginRegistrar"]
+- ["11validadores22SwiftValidadoresPluginC", "FlutterResult"]
+- !private ["11validadores22SwiftValidadoresPluginC", "SwiftValidadoresPlugin"]
+- !private ["11validadores22SwiftValidadoresPluginC", "UIDevice"]
+- ["11validadores22SwiftValidadoresPluginC", "application"]
+- ["11validadores22SwiftValidadoresPluginC", "applicationDidBecomeActive"]
+- ["11validadores22SwiftValidadoresPluginC", "applicationDidEnterBackground"]
+- ["11validadores22SwiftValidadoresPluginC", "applicationWillEnterForeground"]
+- ["11validadores22SwiftValidadoresPluginC", "applicationWillResignActive"]
+- ["11validadores22SwiftValidadoresPluginC", "applicationWillTerminate"]
+- ["11validadores22SwiftValidadoresPluginC", "deinit"]
+- ["11validadores22SwiftValidadoresPluginC", "detachFromEngine"]
+- ["11validadores22SwiftValidadoresPluginC", "detachFromEngineForRegistrar"]
+- ["11validadores22SwiftValidadoresPluginC", "handle"]
+- ["11validadores22SwiftValidadoresPluginC", "handleMethodCall"]
+- ["11validadores22SwiftValidadoresPluginC", "init"]
+- ["11validadores22SwiftValidadoresPluginC", "register"]
+- ["11validadores22SwiftValidadoresPluginC", "registerWithRegistrar"]
+- ["11validadores22SwiftValidadoresPluginC", "setPluginRegistrantCallback"]
+- ["11validadores22SwiftValidadoresPluginC", "userNotificationCenter"]
+- !private ["So8UIDeviceC", "current"]
+- !private ["So8UIDeviceC", "systemVersion"]
+- !private ["So32UNUserNotificationCenterDelegateP", "FlutterMethodChannel"]
+- !private ["So32UNUserNotificationCenterDelegateP", "SwiftValidadoresPlugin"]
+- !private ["So32UNUserNotificationCenterDelegateP", "UIDevice"]
+- ["So32UNUserNotificationCenterDelegateP", ""]
+- ["So32UNUserNotificationCenterDelegateP", "application"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationDidBecomeActive"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationDidEnterBackground"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationWillEnterForeground"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationWillResignActive"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationWillTerminate"]
+- ["So32UNUserNotificationCenterDelegateP", "detachFromEngine"]
+- ["So32UNUserNotificationCenterDelegateP", "detachFromEngineForRegistrar"]
+- ["So32UNUserNotificationCenterDelegateP", "handle"]
+- ["So32UNUserNotificationCenterDelegateP", "handleMethodCall"]
+- !private ["So32UNUserNotificationCenterDelegateP", "init"]
+- ["So32UNUserNotificationCenterDelegateP", "register"]
+- ["So32UNUserNotificationCenterDelegateP", "registerWithRegistrar"]
+- ["So32UNUserNotificationCenterDelegateP", "setPluginRegistrantCallback"]
+- ["So32UNUserNotificationCenterDelegateP", "userNotificationCenter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FlutterMethodChannel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SwiftValidadoresPlugin"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIDevice"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", "application"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidBecomeActive"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidEnterBackground"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillEnterForeground"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillResignActive"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "detachFromEngine"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "detachFromEngineForRegistrar"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "handle"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "handleMethodCall"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "register"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "registerWithRegistrar"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "setPluginRegistrantCallback"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "systemVersion"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "userNotificationCenter"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "FlutterMethodChannel"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SwiftValidadoresPlugin"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIDevice"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "application"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationDidBecomeActive"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationDidEnterBackground"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationWillEnterForeground"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationWillResignActive"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationWillTerminate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "current"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "detachFromEngine"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "detachFromEngineForRegistrar"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "handle"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "handleMethodCall"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "register"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "registerWithRegistrar"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setPluginRegistrantCallback"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemVersion"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "userNotificationCenter"]
+depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "So35FlutterApplicationLifeCycleDelegateP"
+- !private "So20FlutterMethodChannelC"
+- "So13FlutterPluginP"
+- !private "So22FlutterPluginRegistrarP"
+- "SH"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "11validadores22SwiftValidadoresPluginC"
+- !private "So8UIDeviceC"
+- "So32UNUserNotificationCenterDelegateP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMedia.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreAudio.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Pods/Target Support Files/validadores/validadores-umbrella.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterCallbackCache.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterEngine.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterTexture.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterPluginAppLifeCycleDelegate.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterAppDelegate.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterPlugin.h"
+- "/Users/renatolmb/development/flutter/.pub-cache/hosted/pub.dartlang.org/validadores-1.0.2/ios/Classes/ValidadoresPlugin.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterBinaryMessenger.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterViewController.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterHeadlessDartRunner.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/Flutter.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterCodecs.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterChannels.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterMacros.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterPlatformViews.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Headers/FlutterDartProject.h"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/build/Pods.build/Debug-iphonesimulator/validadores.build/unextended-module.modulemap"
+- "/Users/renatolmb/Documents/program/flutter/rlmb_cv_ag/rlmb_cvag/ios/Flutter/Flutter.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "8b79ffbf9b1aacce37c449b577df1206"
