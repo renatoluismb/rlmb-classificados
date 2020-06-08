@@ -6,11 +6,13 @@ class ItemAnuncio extends StatelessWidget {
   Anuncio anuncio;
   VoidCallback onTapItem;
   VoidCallback onPressedRemover;
+  VoidCallback onPressedEditar;
 
   ItemAnuncio({
     @required this.anuncio,
     this.onTapItem,
-    this.onPressedRemover
+    this.onPressedRemover,
+    this.onPressedEditar
   });
 
   @override
@@ -48,6 +50,17 @@ class ItemAnuncio extends StatelessWidget {
                 ],),
               ),
             ),
+            if ( this.onPressedEditar != null ) Expanded(
+              flex: 1,
+              child: FlatButton(
+                color: Colors.blueAccent,
+                padding: EdgeInsets.all(10),
+                onPressed: this.onPressedEditar,
+                child: Icon(Icons.mode_edit, color: Colors.white,),
+              ),
+            ),
+            Padding(
+                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8)),
             if ( this.onPressedRemover != null ) Expanded(
               flex: 1,
               child: FlatButton(

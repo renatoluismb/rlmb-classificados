@@ -121,48 +121,96 @@ class _MeusAnunciosState extends State<MeusAnuncios> {
 
                     return ItemAnuncio(
                       anuncio: anuncio,
-                      onPressedRemover: (){
-                        showDialog(
-                            context: context,
-                            builder: (context){
-                              return AlertDialog(
-                                title: Text("Confirmar"),
-                                content: Text("Deseja realmente excluir o anúncio?"),
-                                actions: <Widget>[
-
-                                  FlatButton(
-                                    child: Text(
-                                      "Cancelar",
-                                      style: TextStyle(
-                                          color: Colors.grey
-                                      ),
-                                    ),
-                                    onPressed: (){
-                                      Navigator.of(context).pop();
-                                    },
-                                  ),
-
-                                  FlatButton(
-                                    color: Colors.red,
-                                    child: Text(
-                                      "Remover",
-                                      style: TextStyle(
-                                          color: Colors.white
-
-                                      ),
-                                    ),
-                                    onPressed: (){
-                                      _removerAnuncio( anuncio.id );
-                                      Navigator.of(context).pop();
-                                    },
-                                  ),
-
-
-                                ],
-                              );
-                            }
+                      onPressedEditar: (){
+                        Navigator.pushNamed(
+                            context,
+                            "/editar-anuncio",
+                            arguments: anuncio
                         );
+//                        showDialog(
+//                            context: context,
+//                            builder: (context){
+//                              return AlertDialog(
+//                                title: Text("Confirmar"),
+//                                content: Text("Edição:"),
+//                                actions: <Widget>[
+//
+//                                  FlatButton(
+//                                    child: Text(
+//                                      "Cancelar",
+//                                      style: TextStyle(
+//                                          color: Colors.grey
+//                                      ),
+//                                    ),
+//                                    onPressed: (){
+//                                      Navigator.of(context).pop();
+//                                    },
+//                                  ),
+//
+//                                  FlatButton(
+//                                    color: Colors.red,
+//                                    child: Text(
+//                                      "Remover",
+//                                      style: TextStyle(
+//                                          color: Colors.white
+//
+//                                      ),
+//                                    ),
+//                                    onPressed: (){
+//                                      _removerAnuncio( anuncio.id );
+//                                      Navigator.of(context).pop();
+//                                    },
+//                                  ),
+//
+//
+//                                ],
+//                              );
+//                            }
+//                        );
                       },
+                      onPressedRemover: (){
+                      showDialog(
+                          context: context,
+                          builder: (context){
+                            return AlertDialog(
+                              title: Text("Confirmar"),
+                              content: Text("Deseja realmente excluir o anúncio?"),
+                              actions: <Widget>[
+
+                                FlatButton(
+                                  child: Text(
+                                    "Cancelar",
+                                    style: TextStyle(
+                                        color: Colors.grey
+                                    ),
+                                  ),
+                                  onPressed: (){
+                                    Navigator.of(context).pop();
+                                  },
+                                ),
+
+                                FlatButton(
+                                  color: Colors.red,
+                                  child: Text(
+                                    "Remover",
+                                    style: TextStyle(
+                                        color: Colors.white
+
+                                    ),
+                                  ),
+                                  onPressed: (){
+                                    _removerAnuncio( anuncio.id );
+                                    Navigator.of(context).pop();
+                                  },
+                                ),
+
+
+                              ],
+                            );
+                          }
+                      );
+                    },
+
                     );
                   }
               );

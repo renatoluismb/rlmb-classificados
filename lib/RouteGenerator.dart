@@ -1,4 +1,5 @@
 
+import 'package:cvag/views/EditarAnuncio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cvag/views/Anuncios.dart';
@@ -29,6 +30,10 @@ class RouteGenerator {
       case "/novo-anuncio" :
         return MaterialPageRoute(
             builder: (_) => NovoAnuncio()
+        );
+      case "/editar-anuncio" :
+        return MaterialPageRoute(
+            builder: (_) => EditarAnuncio(args)
         );
       case "/detalhes-anuncio" :
         return MaterialPageRoute(
