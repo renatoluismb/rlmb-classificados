@@ -85,8 +85,9 @@ class _MeusAnunciosState extends State<MeusAnuncios> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton.extended(
         foregroundColor: Colors.white,
+        backgroundColor: Colors.teal,
         icon: Icon(Icons.add),
-        label: Text("Adicionar"),
+        label: Text("Adicionar anúncio"),
         //child: Icon(Icons.add),
         onPressed: (){
           Navigator.pushNamed(context, "/novo-anuncio");

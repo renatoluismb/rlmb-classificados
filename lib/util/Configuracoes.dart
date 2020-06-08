@@ -34,7 +34,7 @@ class Configuracoes {
     itensDropCategorias.add(
         DropdownMenuItem(child: Text(
             "Busca por Categoria", style: TextStyle(
-          color: Colors.teal
+          color: Color(0xFF00486b)
         ),
         ), value: null,)
     );
@@ -76,7 +76,7 @@ class Configuracoes {
     itensDropBlocos.add(
         DropdownMenuItem(child: Text(
           "Bloco", style: TextStyle(
-            color: Colors.teal
+            color: Color(0xFF00486b)
         ),
         ), value: null,)
     );
