@@ -168,8 +168,6 @@ class _EditarAnuncioState extends State<EditarAnuncio> {
       precoController.text = _anuncio.preco;
       telefoneController.text = _anuncio.telefone;
       descricaoController.text = _anuncio.descricao;
-      print(listaUrlImagens);
-
     }
 
   }
@@ -226,16 +224,23 @@ class _EditarAnuncioState extends State<EditarAnuncio> {
               children: <Widget>[
               FormField<List>(
                 initialValue: _listaImagens,
-                validator: ( imagens ){
-                  if( imagens.length == 0 ){
-                    return "Necessário selecionar uma imagem!";
-                  }
-                  return null;
-                },
+
+//                validator: ( imagens ){
+//                  if( imagens.length == 0 ){
+//                    return "Necessário selecionar uma imagem!";
+//                  }
+//                  return null;
+//                },
                 builder: (state){
                   return Column(children: <Widget>[
+                    Text(
+                      "* Não é possivel editar as imagens já inseridas. Apenas incluir novas.",
+                      style: TextStyle(
+                          color: Colors.red
+                      ),
+                    ),
                     Container(
-                      height: 100,
+                      height: 120,
                       child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: _listaImagens.length + 1, //3

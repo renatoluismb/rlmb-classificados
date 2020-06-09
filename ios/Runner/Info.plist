@@ -9,12 +9,14 @@
     <key>NSCameraUsageDescription</key>
     <string>Podemos utilizar a sua câmera, por favor?</string>
     <key>NSPhotoLibraryUsageDescription</key>
-    <string>Podemos ter acesso ä sua galeria de fotos?</string>
+    <string>Podemos ter acesso a sua galeria de fotos?</string>
     <key>NSMicrophoneUsageDescription</key>
     <string>Can I use the mic please?</string>	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>GADApplicationIdentifier</key>
+    <string>ca-app-pub-5071554554343382~5112157157</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>

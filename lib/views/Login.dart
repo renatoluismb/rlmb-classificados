@@ -21,6 +21,16 @@ void mostraMsg(msg) {
       timeInSecForIosWeb: 5);
 }
 
+void mostraMsgSucesso(msg) {
+  Fluttertoast.showToast(
+      msg: msg,
+      backgroundColor: Colors.green,
+      textColor: Colors.white,
+      toastLength: Toast.LENGTH_SHORT,
+      gravity: ToastGravity.BOTTOM,
+      timeInSecForIosWeb: 5);
+}
+
 
 class Login extends StatefulWidget {
   @override
@@ -45,6 +55,8 @@ class _LoginState extends State<Login> {
         password: usuario.senha
     ).then((firebaseUser){
 
+      mostraMsgSucesso('Usuário cadastrado com sucesso!');
+
       //redireciona para tela principal
       Navigator.pushReplacementNamed(context, "/anuncios");
 
@@ -67,13 +79,13 @@ class _LoginState extends State<Login> {
       authProblems errorType;
       if (Platform.isAndroid) {
         switch (e.message) {
-          case 'There is no user record corresponding to this identifier. The user may have been deleted.':
+          case 'Erro as buscar usuário.':
             errorType = authProblems.UserNotFound;
             break;
-          case 'The password is invalid or the user does not have a password.':
+          case 'Senha incorreta.':
             errorType = authProblems.PasswordNotValid;
             break;
-          case 'A network error (such as timeout, interrupted connection or unreachable host) has occurred.':
+          case 'Problemas na conexão.':
             errorType = authProblems.NetworkError;
             break;
         // ...
@@ -157,6 +169,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Text(""),
       ),
       body: Container(

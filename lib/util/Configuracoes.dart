@@ -40,6 +40,10 @@ class Configuracoes {
     );
 
     itensDropCategorias.add(
+        DropdownMenuItem(child: Text("Alimentação"), value: "alimentacao",)
+    );
+
+    itensDropCategorias.add(
         DropdownMenuItem(child: Text("Automóveis"), value: "auto",)
     );
 

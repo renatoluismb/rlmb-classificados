@@ -29,7 +29,7 @@ class ItemAnuncio extends StatelessWidget {
               height: 120,
               child: Image.network(
                 anuncio.fotos[0],
-                fit: BoxFit.cover,
+                fit: BoxFit.fitWidth,
               ),
             ),
             Expanded(
@@ -44,7 +44,7 @@ class ItemAnuncio extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold
-                    ),
+                  ),
                   ),
                   Text("R\$ ${anuncio.preco} "),
                 ],),

@@ -8,6 +8,7 @@ import 'package:cvag/models/Anuncio.dart';
 import 'package:cvag/util/Configuracoes.dart';
 import 'package:cvag/views/widgets/ItemAnuncio.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:firebase_admob/firebase_admob.dart';
 
 class Anuncios extends StatefulWidget {
   @override
@@ -15,6 +16,45 @@ class Anuncios extends StatefulWidget {
 }
 
 class _AnunciosState extends State<Anuncios> {
+
+ MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
+    keywords: <String>['flutterio', 'beautiful apps'],
+    contentUrl: 'https://flutter.io',
+    childDirected: false,
+    testDevices: <String>[],
+  );
+
+  BannerAd myBanner;
+  InterstitialAd myInterstitial;
+  int clicks = 0;
+
+  void startBanner() {
+    myBanner = BannerAd(
+      adUnitId: BannerAd.testAdUnitId,
+      size: AdSize.smartBanner,
+      targetingInfo: targetingInfo,
+      listener: (MobileAdEvent event) {
+        if (event == MobileAdEvent.opened) {
+          // MobileAdEvent.opened
+          // MobileAdEvent.clicked
+          // MobileAdEvent.closed
+          // MobileAdEvent.failedToLoad
+          // MobileAdEvent.impression
+          // MobileAdEvent.leftApplication
+        }
+        print("BannerAd event is $event");
+      },
+    );
+  }
+
+  void displayBanner() {
+    myBanner
+      ..load()
+      ..show(
+        anchorOffset: 105.0,
+        anchorType: AnchorType.bottom,
+      );
+  }
 
   FirebaseUser usuarioLogado;
 
@@ -84,6 +124,7 @@ class _AnunciosState extends State<Anuncios> {
   }
 
   Future<Stream<QuerySnapshot>> _adicionarListenerAnuncios() async {
+    print('caiu aqui');
 
     Firestore db = Firestore.instance;
     Stream<QuerySnapshot> stream = db
@@ -117,12 +158,46 @@ class _AnunciosState extends State<Anuncios> {
 
   @override
   void initState() {
+
+    FirebaseAdMob.instance
+        .initialize(appId: "ca-app-pub-5071554554343382~5112157157");
     super.initState();
+
+
+//    startBanner();
+//    displayBanner();
+
+    myInterstitial = buildInterstitial()
+      ..load()
+      ..show();
+
 
     _carregarItensDropdown();
     _verificarUsuarioLogado();
     _adicionarListenerAnuncios();
 
+  }
+
+ InterstitialAd buildInterstitial() {
+   return InterstitialAd(
+       adUnitId: "ca-app-pub-5071554554343382/3385315972",
+       targetingInfo: MobileAdTargetingInfo(testDevices: <String>[]),
+       listener: (MobileAdEvent event) {
+         if (event == MobileAdEvent.loaded) {
+           myInterstitial?.show();
+         }
+         if (event == MobileAdEvent.clicked || event == MobileAdEvent.closed) {
+           myInterstitial.dispose();
+           clicks = 0;
+         }
+       });
+ }
+
+  @override
+  void dispose() {
+    myBanner?.dispose();
+    myInterstitial?.dispose();
+    super.dispose();
   }
 
   _onTap(int tabIndex) {

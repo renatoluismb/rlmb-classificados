@@ -108,7 +108,7 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  "Bloco/Apartamento: ${_anuncio.bloco} ${_anuncio.apartamento}",
+                  "Bloco: ${_anuncio.bloco} - Apartamento: ${_anuncio.apartamento}",
                   style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold
