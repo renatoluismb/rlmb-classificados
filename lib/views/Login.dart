@@ -78,15 +78,15 @@ class _LoginState extends State<Login> {
     } catch (e) {
       authProblems errorType;
       if (Platform.isAndroid) {
-        switch (e.message) {
-          case 'Erro as buscar usuário.':
-            errorType = authProblems.UserNotFound;
+        switch (e.code) {
+          case 'ERROR_USER_NOT_FOUND':
+            mostraMsg('Usuário não localizado!');
             break;
-          case 'Senha incorreta.':
-            errorType = authProblems.PasswordNotValid;
+          case 'ERROR_WRONG_PASSWORD':
+            mostraMsg('Senha inválida ou nula');
             break;
-          case 'Problemas na conexão.':
-            errorType = authProblems.NetworkError;
+          case 'ERROR_TOO_MANY_REQUESTS':
+            mostraMsg('Você efetuou muitas requisições simultâneas. Aguarde um momento.');
             break;
         // ...
           default:
