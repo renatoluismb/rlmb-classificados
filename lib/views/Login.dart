@@ -129,6 +129,34 @@ class _LoginState extends State<Login> {
 
   }
 
+  _EsqueciSenha() async {
+
+    FirebaseAuth auth = FirebaseAuth.instance;
+
+    //Recupera dados dos campos
+    String email = _controllerEmail.text;
+
+    if (email.isNotEmpty && email.contains("@")) {
+
+        //Configura usuario
+        Usuario usuario = Usuario();
+        usuario.email = email;
+        try {
+        await auth.sendPasswordResetEmail(email: usuario.email).then((firebaseUser){;
+           mostraMsgSucesso('Você receberá um e-mail com as instruções para recuperar sua senha!');
+           });
+         } catch (error) {
+            print('caiu aqui');
+            print (error.toString());
+        }
+        } else {
+      setState(() {
+        _mensagemErro = "* Preencha o E-mail válido";
+      });
+    }
+
+  }
+
   _validarCampos() {
 
     //Recupera dados dos campos
@@ -154,12 +182,12 @@ class _LoginState extends State<Login> {
 
       } else {
         setState(() {
-          _mensagemErro = "Preencha a senha! digite mais de 6 caracteres";
+          _mensagemErro = "* Preencha a senha! digite mais de 6 caracteres";
         });
       }
     } else {
       setState(() {
-        _mensagemErro = "Preencha o E-mail válido";
+        _mensagemErro = "* Preencha o E-mail válido";
       });
     }
 
@@ -243,20 +271,38 @@ class _LoginState extends State<Login> {
                     _validarCampos();
                   },
                 ),
+                Padding(
+                  padding: EdgeInsets.only(top: 20)
+                ),
                 FlatButton(
-                  child: Text("Ir para anúncios"),
+                  child: Text("Ir para anúncios", style: TextStyle(
+                      color: Colors.white, fontSize: 16
+                  ),),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(6)
+                  ),
+                  color: Colors.blueAccent,
+                  padding: EdgeInsets.fromLTRB(32, 16, 32, 16),
                   onPressed: (){
                     Navigator.pushReplacementNamed(context, "/anuncios");
                   },
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 20),
+                  padding: EdgeInsets.only(top: 15),
                   child: Text(_mensagemErro, style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 14,
                       fontWeight: FontWeight.bold,
                       color: Colors.red
                   ),),
-                )
+                ),
+                FlatButton(
+                  child: Text("Esqueci minha senha", style: TextStyle(
+                      color: Colors.black45, fontSize: 16
+                  ),),
+                  onPressed: (){
+                    _EsqueciSenha();
+                  },
+                ),
             ],),
           ),
         ),

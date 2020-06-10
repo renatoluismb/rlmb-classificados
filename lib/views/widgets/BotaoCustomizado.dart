@@ -21,7 +21,7 @@ class BotaoCustomizado extends StatelessWidget {
       child: Text(
         this.texto,
         style: TextStyle(
-            color: this.corTexto, fontSize: 20
+            color: this.corTexto, fontSize: 16
         ),
       ),
       color: Colors.teal,
