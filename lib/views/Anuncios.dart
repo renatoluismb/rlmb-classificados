@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -179,8 +180,14 @@ class _AnunciosState extends State<Anuncios> {
   }
 
  InterstitialAd buildInterstitial() {
+    var unit = "";
+    if (Platform.isIOS) {
+      unit =  'ca-app-pub-5071554554343382/3385315972';
+    } else if (Platform.isAndroid) {
+      unit = 'ca-app-pub-5071554554343382/2230116591';
+    }
    return InterstitialAd(
-       adUnitId: "ca-app-pub-5071554554343382/3385315972",
+       adUnitId: unit,
        targetingInfo: MobileAdTargetingInfo(testDevices: <String>[]),
        listener: (MobileAdEvent event) {
          if (event == MobileAdEvent.loaded) {
