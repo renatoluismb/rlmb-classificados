@@ -6,6 +6,7 @@ import 'package:cvag/views/widgets/BotaoCustomizado.dart';
 import 'package:cvag/views/widgets/InputCustomizado.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 
@@ -211,9 +212,11 @@ class _LoginState extends State<Login> {
             mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "CLASSIFICADOS",
+                    "CLASSIFICADOS\n",
                     style: TextStyle(
-                        fontSize: 35,
+                        fontSize: 38,
+                      fontFamily: 'Baloo',
+                      fontStyle: FontStyle.italic,
                         fontWeight: FontWeight.w900,
                       color: Color(0xFF00486b),
                     ),
@@ -224,8 +227,8 @@ class _LoginState extends State<Login> {
                   child:
                   ClipRRect(
                     borderRadius: BorderRadius.circular(18.0),
-                    child: Image.asset(
-                      'imagens/logo.png',
+                    child: SvgPicture.asset(
+                      'imagens/logo_novo.svg',
                       width: 180.0,
                       height: 220.0,
                       fit: BoxFit.fill,

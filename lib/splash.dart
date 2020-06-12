@@ -1,6 +1,7 @@
 import 'package:cvag/views/Anuncios.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_svg/svg.dart';
 
 class Splash extends StatefulWidget {
   @override
@@ -30,26 +31,28 @@ class _SplashState extends State<Splash> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Container(
-                height: 200.0,
-                width: 390.0,
-                decoration: new BoxDecoration(
-                    image: DecorationImage(
-                        image: new AssetImage('imagens/logo.png'),
-//                        fit: BoxFit.fitWidth
-                    ),
-//                  borderRadius: BorderRadius.circular(100.0),
+                alignment: Alignment.bottomCenter,
+                child:Text(
+                  "CLASSIFICADOS\n",
+                  style: TextStyle(
+                    fontSize: 38,
+                    fontFamily: 'Baloo',
+                    fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.w900,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-              Container(
-                alignment: Alignment.bottomCenter,
-                child:Text('Classificados - Via Enseada',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontFamily: 'Aleo',
-                      fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25.0,
-                      color: Colors.white
+              Padding(
+                padding: EdgeInsets.only(bottom: 52),
+                child:
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(18.0),
+                  child: SvgPicture.asset(
+                    'imagens/logo_novo_branco.svg',
+                    width: 180.0,
+                    height: 220.0,
+                    fit: BoxFit.fill,
                   ),
                 ),
               ),

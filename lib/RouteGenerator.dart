@@ -1,4 +1,5 @@
 
+import 'package:cvag/termos.dart';
 import 'package:cvag/views/EditarAnuncio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -38,6 +39,10 @@ class RouteGenerator {
       case "/detalhes-anuncio" :
         return MaterialPageRoute(
             builder: (_) => DetalhesAnuncio(args)
+        );
+      case "/termos" :
+        return MaterialPageRoute(
+            builder: (_) => Termos()
         );
       default:
         _erroRota();

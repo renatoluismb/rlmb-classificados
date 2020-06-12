@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:brasil_fields/brasil_fields.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cvag/views/Anuncios.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
@@ -45,13 +46,18 @@ class _NovoAnuncioState extends State<NovoAnuncio> {
 //    });
 //  }
   Future _selecionarImagemGaleria() async {
+    if (_listaImagens.length == 3) {
+      mostraMsg('É permitido no máximo de 3 fotos por anúncio!');
+      return;
+    } else {
+      File imagemSelecionada = await ImagePicker.pickImage(source: ImageSource.gallery);
 
-    File imagemSelecionada = await ImagePicker.pickImage(source: ImageSource.gallery);
+      if( imagemSelecionada != null ){
+        setState(() {
+          _listaImagens.add( imagemSelecionada );
+        });
+      }
 
-    if( imagemSelecionada != null ){
-      setState(() {
-        _listaImagens.add( imagemSelecionada );
-      });
     }
 
   }

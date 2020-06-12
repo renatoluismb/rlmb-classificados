@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -6,6 +8,7 @@ import 'package:cvag/models/Anuncio.dart';
 import 'package:flutter_launch/flutter_launch.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_open_whatsapp/flutter_open_whatsapp.dart';
 
 class DetalhesAnuncio extends StatefulWidget {
 
@@ -51,12 +54,33 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
   }
 
   void _whats(String telefone) async {
+
+    var saudacao = '';
+    var titulo = _anuncio.titulo;
+    var hour = DateTime.now().hour;
+
+    if (hour < 12) {
+      saudacao = 'Bom dia';
+    } else if (hour < 17) {
+      saudacao =  'Boa tarde';
+    } else {
+      saudacao = 'Boa noite';
+    }
+
+    var msg = Uri.encodeComponent('Olá vizinho, $saudacao! Gostaria de conversar sobre o anúncio: $titulo');
+
+    print(msg);
+
     telefone = "55" + telefone;
     telefone = telefone.toString().replaceAll(' ', "");
     telefone = telefone.toString().replaceAll('(', "");
     telefone = telefone.toString().replaceAll(')', "");
 
-    await FlutterLaunch.launchWathsApp(phone: telefone, message: "Olá");
+    await FlutterOpenWhatsapp.sendSingleMessage(telefone, msg);
+
+
+
+//    await FlutterLaunch.launchWathsApp(phone: telefone, text: msg ?? "");
 
   }
 

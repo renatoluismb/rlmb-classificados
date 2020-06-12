@@ -19,8 +19,8 @@ class Anuncios extends StatefulWidget {
 class _AnunciosState extends State<Anuncios> {
 
  MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
-    keywords: <String>['flutterio', 'beautiful apps'],
-    contentUrl: 'https://flutter.io',
+//    keywords: <String>['flutterio', 'beautiful apps', 'games', 'business', 'health'],
+//    contentUrl: 'https://flutter.io',
     childDirected: false,
     testDevices: <String>[],
   );
@@ -30,8 +30,14 @@ class _AnunciosState extends State<Anuncios> {
   int clicks = 0;
 
   void startBanner() {
+    var unit = "";
+    if (Platform.isIOS) {
+      unit =  'ca-app-pub-5071554554343382/6583955267';
+    } else if (Platform.isAndroid) {
+      unit = 'ca-app-pub-5071554554343382/8951383718';
+    }
     myBanner = BannerAd(
-      adUnitId: BannerAd.testAdUnitId,
+      adUnitId: unit,
       size: AdSize.smartBanner,
       targetingInfo: targetingInfo,
       listener: (MobileAdEvent event) {
@@ -49,12 +55,21 @@ class _AnunciosState extends State<Anuncios> {
   }
 
   void displayBanner() {
-    myBanner
-      ..load()
-      ..show(
-        anchorOffset: 105.0,
-        anchorType: AnchorType.bottom,
-      );
+    if (Platform.isIOS) {
+      myBanner
+        ..load()
+        ..show(
+          anchorOffset: 890.0,
+          anchorType: AnchorType.bottom,
+        );
+    } else if (Platform.isAndroid) {
+      myBanner
+        ..load()
+        ..show(
+          anchorOffset: 810.0,
+          anchorType: AnchorType.bottom,
+        );
+    }
   }
 
   FirebaseUser usuarioLogado;
@@ -202,8 +217,16 @@ class _AnunciosState extends State<Anuncios> {
 
   @override
   void dispose() {
-    myBanner?.dispose();
-    myInterstitial?.dispose();
+
+    try {
+
+      myBanner?.dispose();
+      myInterstitial?.dispose();
+
+    } catch (ex) {
+      print(ex);
+    }
+
     super.dispose();
   }
 
@@ -219,8 +242,11 @@ class _AnunciosState extends State<Anuncios> {
           mostraMsg('Usuário não localizado! Faça o seu login, ou cadastre-se!');
         }
         break;
-        case 2:
+      case 2:
           Navigator.popAndPushNamed(context, "/login");
+        break;
+      case 3:
+        Navigator.popAndPushNamed(context, "/termos");
         break;
     }
     setState(() {
@@ -242,7 +268,7 @@ class _AnunciosState extends State<Anuncios> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Classificados - Via Enseada"),
+        title: Text("Classificados - Enseada"),
         automaticallyImplyLeading: false,
         elevation: 0,
         actions: <Widget>[
@@ -260,6 +286,7 @@ class _AnunciosState extends State<Anuncios> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         currentIndex: _currentTabIndex, // this will be set when a new tab is tapped
         items: [
           BottomNavigationBarItem(
@@ -272,7 +299,11 @@ class _AnunciosState extends State<Anuncios> {
           ),
           BottomNavigationBarItem(
               icon: Icon(Icons.person),
-              title: Text('Entrar/Cadastrar')
+              title: Text('Entrar')
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.assignment),
+              title: Text('Termos de Uso')
           )
         ],
         onTap: _onTap,
@@ -445,4 +476,3 @@ void mostraMsg(msg) {
       gravity: ToastGravity.BOTTOM,
       timeInSecForIosWeb: 5);
 }
-

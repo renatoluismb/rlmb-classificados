@@ -14,6 +14,8 @@ import 'package:cvag/views/widgets/InputCustomizado.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:validadores/Validador.dart';
 
+import 'Anuncios.dart';
+
 
 
 class EditarAnuncio extends StatefulWidget {
@@ -58,12 +60,18 @@ class _EditarAnuncioState extends State<EditarAnuncio> {
 //  }
   Future _selecionarImagemGaleria() async {
 
-    File imagemSelecionada = await ImagePicker.pickImage(source: ImageSource.gallery);
+    if (_listaImagens.length == 3) {
+      mostraMsg('É permitido no máximo de 3 fotos por anúncio!');
+      return;
+    } else {
+      File imagemSelecionada = await ImagePicker.pickImage(source: ImageSource.gallery);
 
-    if( imagemSelecionada != null ){
-      setState(() {
-        _listaImagens.add( imagemSelecionada );
-      });
+      if( imagemSelecionada != null ){
+        setState(() {
+          _listaImagens.add( imagemSelecionada );
+        });
+      }
+
     }
 
   }
@@ -159,8 +167,23 @@ class _EditarAnuncioState extends State<EditarAnuncio> {
     _anuncio = widget.anuncio;
 
     // Carrega os dados do anúncio
+
     if (_anuncio != null) {
-      List<String> listaUrlImagens = _anuncio.fotos;
+      List<String> strings = _anuncio.fotos;
+
+      List<File> files = [];
+
+      strings.forEach((i){
+        setState(() {
+          files.add( File(i) );
+        });
+      });
+
+      print(_listaImagens);
+      print(files);
+
+      _listaImagens.addAll(files);
+
       _itemSelecionadoBloco = _anuncio.bloco;
       _itemSelecionadoCategoria = _anuncio.categoria;
       apartamentoController.text = _anuncio.apartamento;
@@ -232,6 +255,7 @@ class _EditarAnuncioState extends State<EditarAnuncio> {
 //                  return null;
 //                },
                 builder: (state){
+
                   return Column(children: <Widget>[
                     Text(
                       "* Não é possivel editar as imagens já inseridas. Apenas incluir novas.",

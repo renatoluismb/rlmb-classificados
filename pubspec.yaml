@@ -36,7 +36,9 @@ dependencies:
   fluttertoast: ^4.0.1
   flutter_launch: ^0.2.0
   firebase_admob: ^0.9.3+2
-
+  flutter_html: ^0.11.1
+  flutter_svg: ^0.17.4
+  flutter_open_whatsapp: ^0.1.2
 
 dev_dependencies:
   flutter_launcher_icons: "^0.7.5"
@@ -51,8 +53,8 @@ flutter_icons:
   android: true
   ios: true
   #  image_path: 'assets/ic_launcher.png'
-  image_path_android: "assets/logo.png"
-  image_path_ios: "assets/logo.png"
+  image_path_android: "assets/logo_app.png"
+  image_path_ios: "assets/logo_app.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -60,14 +62,22 @@ flutter_icons:
 # The following section is specific to Flutter.
 flutter:
 
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
 
+  fonts:
+    - family: Baloo
+      fonts:
+        - asset: fonts/Baloo.ttf
+
   # To add assets to your application, add an assets section, like this:
   assets:
-    - imagens/logo.png
+    - imagens/logo_app.png
+    - imagens/logo_novo.svg
+    - imagens/logo_novo_branco.svg
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
