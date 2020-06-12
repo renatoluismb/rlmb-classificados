@@ -20,16 +20,21 @@ class ItemAnuncio extends StatelessWidget {
     return GestureDetector(
       onTap: this.onTapItem,
       child: Card(
+          elevation: 2.0,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(18)
+        ),
+//          shadowColor: Colors.blueAccent,
         child: Padding(
           padding: EdgeInsets.all(12),
           child: Row(children: <Widget>[
 
             SizedBox(
-              width: 120,
-              height: 120,
+              width: 100,
+              height: 100,
               child: Image.network(
                 anuncio.fotos[0],
-                fit: BoxFit.fitWidth,
+                fit: BoxFit.cover,
               ),
             ),
             Expanded(

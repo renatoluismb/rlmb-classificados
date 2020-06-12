@@ -463,7 +463,9 @@ class _AnunciosState extends State<Anuncios> {
           )
 
         ]
-        ),onRefresh: _adicionarListenerAnuncios),
+        ),
+        onRefresh: _adicionarListenerAnuncios
+    ),
       ),
     );
   }

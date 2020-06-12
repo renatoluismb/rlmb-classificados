@@ -172,29 +172,29 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                height: 25,
-                width: 25,
+                height: 30,
+                width: 30,
                 child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(6)
-                  ),
-                  color: Colors.transparent,
-                  padding: EdgeInsets.fromLTRB(2, 6, 2, 6),
+//                  shape: RoundedRectangleBorder(
+//                      borderRadius: BorderRadius.circular(19)
+//                  ),
+                  color: Colors.white,
+                  padding: EdgeInsets.fromLTRB(2, 9, 2, 6),
                   onPressed: () => buttonCarouselController.previousPage(),
-                  child: Text(' ← ', style: TextStyle(color: Colors.white)),
+                  child: Text(' ← ', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold)),
                 ),
               ),
               SizedBox(
-                height: 25,
-                width: 25,
+                height: 30,
+                width: 30,
                 child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(6)
-                  ),
-                  color: Colors.transparent,
-                  padding: EdgeInsets.fromLTRB(2, 6, 2, 6),
+//                  shape: RoundedRectangleBorder(
+//                      borderRadius: BorderRadius.circular(6)
+//                  ),
+                  color: Colors.white,
+                  padding: EdgeInsets.fromLTRB(2, 9 , 2, 6),
                   onPressed: () => buttonCarouselController.nextPage(),
-                  child: Text(' → ', style: TextStyle(color: Colors.white)),
+                  child: Text(' → ', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold)),
                 ),
               ),
 //              ...Iterable<int>.generate(_getListaImagens().length).map(
