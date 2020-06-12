@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cvag/models/Anuncio.dart';
 import 'package:cvag/views/widgets/ItemAnuncio.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class MeusAnuncios extends StatefulWidget {
   @override

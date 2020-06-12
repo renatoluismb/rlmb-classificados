@@ -169,20 +169,20 @@ class _EditarAnuncioState extends State<EditarAnuncio> {
     // Carrega os dados do anúncio
 
     if (_anuncio != null) {
-      List<String> strings = _anuncio.fotos;
-
-      List<File> files = [];
-
-      strings.forEach((i){
-        setState(() {
-          files.add( File(i) );
-        });
-      });
-
-      print(_listaImagens);
-      print(files);
-
-      _listaImagens.addAll(files);
+//      List<String> strings = _anuncio.fotos;
+//
+//      List<File> files = [];
+//
+//      strings.forEach((i){
+//        setState(() {
+//          files.add( File(i) );
+//        });
+//      });
+//
+//      print(_listaImagens);
+//      print(files);
+//
+//      _listaImagens.addAll(files);
 
       _itemSelecionadoBloco = _anuncio.bloco;
       _itemSelecionadoCategoria = _anuncio.categoria;

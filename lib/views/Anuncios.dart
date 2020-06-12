@@ -183,10 +183,12 @@ class _AnunciosState extends State<Anuncios> {
 //    startBanner();
 //    displayBanner();
 
-    myInterstitial = buildInterstitial()
-      ..load()
-      ..show();
 
+    Timer(Duration(seconds: 4), () {
+      myInterstitial = buildInterstitial()
+        ..load()
+        ..show();
+    });
 
     _carregarItensDropdown();
     _verificarUsuarioLogado();

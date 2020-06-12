@@ -1,11 +1,13 @@
 import 'dart:convert';
 
 import 'package:carousel_pro/carousel_pro.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cvag/main.dart';
 import 'package:cvag/models/Anuncio.dart';
 import 'package:flutter_launch/flutter_launch.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_open_whatsapp/flutter_open_whatsapp.dart';
@@ -20,6 +22,8 @@ class DetalhesAnuncio extends StatefulWidget {
 }
 
 class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
+
+  CarouselController buttonCarouselController = CarouselController();
 
   PermissionStatus _status;
 
@@ -61,7 +65,7 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
 
     if (hour < 12) {
       saudacao = 'Bom dia';
-    } else if (hour < 17) {
+    } else if (hour < 18) {
       saudacao =  'Boa tarde';
     } else {
       saudacao = 'Boa noite';
@@ -110,20 +114,98 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
       appBar: AppBar(
         title: Text("Anúncio"),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      //store btn
+      floatingActionButton: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            FloatingActionButton(
+              backgroundColor: Color(0xFF33cc66),
+              child: new IconButton(
+                  icon: new Icon(MdiIcons.whatsapp, color: Colors.white)),
+              onPressed: () {
+                _whats(_anuncio.telefone);
+              },
+              heroTag: null,
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Divider(),
+            ),
+            FloatingActionButton(
+              backgroundColor: Colors.blueAccent,
+              child: new IconButton(
+                  icon: new Icon(MdiIcons.phone, color: Colors.white)),
+              onPressed: () {
+                _ligarTelefone(_anuncio.telefone);
+              },
+              heroTag: null,
+            ),
+          ]
+      ),
       body: Stack(children: <Widget>[
 
         ListView(children: <Widget>[
 
           SizedBox(
             height: 250,
-            child: Carousel(
-              images: _getListaImagens(),
-              dotSize: 8,
-              dotBgColor: Colors.transparent,
-              dotColor: Colors.white,
-              autoplay: false,
-              dotIncreasedColor: temaPadrao.primaryColor,
+            child:  CarouselSlider(
+              items: _getListaImagens(),
+              carouselController: buttonCarouselController,
+              options: CarouselOptions(
+                height: 250,
+                aspectRatio: 0.5,
+                viewportFraction: 0.8,
+                initialPage: 0,
+                enableInfiniteScroll: false,
+                reverse: false,
+                autoPlay: true,
+                autoPlayInterval: Duration(seconds: 5),
+                autoPlayAnimationDuration: Duration(milliseconds: 400),
+                autoPlayCurve: Curves.decelerate,
+                enlargeCenterPage: true,
+                scrollDirection: Axis.horizontal,
+              ),
             ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              SizedBox(
+                height: 25,
+                width: 25,
+                child: RaisedButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(6)
+                  ),
+                  color: Colors.transparent,
+                  padding: EdgeInsets.fromLTRB(2, 6, 2, 6),
+                  onPressed: () => buttonCarouselController.previousPage(),
+                  child: Text(' ← ', style: TextStyle(color: Colors.white)),
+                ),
+              ),
+              SizedBox(
+                height: 25,
+                width: 25,
+                child: RaisedButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(6)
+                  ),
+                  color: Colors.transparent,
+                  padding: EdgeInsets.fromLTRB(2, 6, 2, 6),
+                  onPressed: () => buttonCarouselController.nextPage(),
+                  child: Text(' → ', style: TextStyle(color: Colors.white)),
+                ),
+              ),
+//              ...Iterable<int>.generate(_getListaImagens().length).map(
+//                    (int pageIndex) => Flexible(
+//                  child: RaisedButton(
+//                    onPressed: () => buttonCarouselController.animateToPage(pageIndex),
+//                    child: Text("$pageIndex"),
+//                  ),
+//                ),
+//              ),
+            ],
           ),
 
           Container(
@@ -195,7 +277,7 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
               ),
 
               Padding(
-                padding: EdgeInsets.only(bottom: 66),
+                padding: EdgeInsets.only(bottom: 50),
                 child: Text(
                   "${_anuncio.telefone}",
                   style: TextStyle(
@@ -207,33 +289,33 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
 
             ],),
           ),
-      Column(
-        children: <Widget>[
-          RaisedButton(
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(18.0),
-                side: BorderSide(color: Colors.blueAccent)),
-            color: Colors.blueAccent,
-            textColor: Colors.white,
-            onPressed: () {
-              _ligarTelefone(_anuncio.telefone);
-            },
-            child: Text('Ligar'),
-          )]),
-          Column(
-
-              children: <Widget>[
-                RaisedButton(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18.0),
-                      side: BorderSide(color: Color(0xFF33cc66))),
-                  color: Color(0xFF33cc66),
-                  textColor: Colors.white,
-                  onPressed: () {
-                    _whats(_anuncio.telefone);
-                  },
-                  child: Text('Conversar Whatsapp'),
-                )]),
+//      Column(
+//        children: <Widget>[
+//          RaisedButton(
+//            shape: RoundedRectangleBorder(
+//                borderRadius: BorderRadius.circular(18.0),
+//                side: BorderSide(color: Colors.blueAccent)),
+//            color: Colors.blueAccent,
+//            textColor: Colors.white,
+//            onPressed: () {
+//              _ligarTelefone(_anuncio.telefone);
+//            },
+//            child: Text('Ligar'),
+//          )]),
+//          Column(
+//
+//              children: <Widget>[
+//                RaisedButton(
+//                  shape: RoundedRectangleBorder(
+//                      borderRadius: BorderRadius.circular(18.0),
+//                      side: BorderSide(color: Color(0xFF33cc66))),
+//                  color: Color(0xFF33cc66),
+//                  textColor: Colors.white,
+//                  onPressed: () {
+//                    _whats(_anuncio.telefone);
+//                  },
+//                  child: Text('Conversar Whatsapp'),
+//                )]),
 //          Container(
 //            left: 16,
 //            right: 16,
