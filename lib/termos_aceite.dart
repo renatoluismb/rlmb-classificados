@@ -158,7 +158,7 @@ class _TermosAceiteState extends State<TermosAceite> {
                   borderRadius: BorderRadius.circular(18.0),
                   side: BorderSide(color: Colors.green)),
               color: Colors.green,
-              child: new Text('Aceitar e finalizar cadastro', style: TextStyle(color: Colors.white, fontSize: 13.0)),
+              child: new Text('Aceitar e Cadastrar', style: TextStyle(color: Colors.white, fontSize: 13.0)),
               onPressed: () {
                 _cadastrarUsuario();
               },),

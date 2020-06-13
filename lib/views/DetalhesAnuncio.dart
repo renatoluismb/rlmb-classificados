@@ -11,6 +11,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:permission_handler/permission_handler.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_open_whatsapp/flutter_open_whatsapp.dart';
+import 'package:intl/intl.dart';
 
 class DetalhesAnuncio extends StatefulWidget {
 
@@ -110,6 +111,7 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Anúncio"),
@@ -220,6 +222,15 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
                       fontWeight: FontWeight.bold
                   ),
                 ),
+                Text(
+                  "Anúncio incluído em: ${DateFormat('dd/MM/yyyy – kk:mm').format(DateTime.parse(_anuncio.dataInclusao.toDate().toString()))}",
+                  style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.black45
+//                      fontWeight: FontWeight.bold
+                  ),
+                ),
+
 
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 16),

@@ -12,6 +12,7 @@ class Anuncio{
   String _descricao;
   String _bloco;
   String _apartamento;
+  Timestamp _dataInclusao;
   List<String> _fotos;
 
   Anuncio();
@@ -27,6 +28,7 @@ class Anuncio{
     this.descricao  = documentSnapshot["descricao"];
     this.bloco  = documentSnapshot["bloco"];
     this.apartamento  = documentSnapshot["apartamento"];
+    this._dataInclusao  = documentSnapshot["dataInclusao"];
     this.fotos  = List<String>.from(documentSnapshot["fotos"]);
 
   }
@@ -54,6 +56,7 @@ class Anuncio{
       "bloco" : this.bloco,
       "apartamento" : this.apartamento,
       "fotos" : this.fotos,
+      "dataInclusao" : this._dataInclusao,
     };
 
     return map;
@@ -95,6 +98,12 @@ class Anuncio{
 
   set preco(String value) {
     _preco = value;
+  }
+
+  Timestamp get dataInclusao => _dataInclusao;
+
+  set dataInclusao(Timestamp value) {
+    _dataInclusao = value;
   }
 
   String get titulo => _titulo;

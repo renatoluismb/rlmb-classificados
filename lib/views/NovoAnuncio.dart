@@ -86,6 +86,8 @@ class _NovoAnuncioState extends State<NovoAnuncio> {
 
     _anuncio.estado = "DF";
 
+    _anuncio.dataInclusao = DateTime.now() as Timestamp;
+
     _abrirDialog( _dialogContext );
 
     //Upload imagens no Storage

@@ -145,6 +145,7 @@ class _AnunciosState extends State<Anuncios> {
     Firestore db = Firestore.instance;
     Stream<QuerySnapshot> stream = db
         .collection("anuncios")
+        .orderBy("dataInclusao", descending: true)
         .snapshots();
 
     stream.listen((dados){
