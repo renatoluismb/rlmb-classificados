@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:cvag/termos_aceite.dart';
 import 'package:flutter/material.dart';
 import 'package:cvag/models/Usuario.dart';
 import 'package:cvag/views/widgets/BotaoCustomizado.dart';
@@ -174,8 +175,10 @@ class _LoginState extends State<Login> {
 
         //cadastrar ou logar
         if( _cadastrar ){
-          //Cadastrar
-          _cadastrarUsuario(usuario);
+          print(usuario);
+          Navigator.push(context, MaterialPageRoute(
+              builder: (context) => TermosAceite(usuario)
+          ));
         }else{
           //Logar
           _logarUsuario(usuario);
@@ -252,8 +255,18 @@ class _LoginState extends State<Login> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text("Logar"),
+                    Text("Logar",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontFamily: 'Baloo',
+//                        fontStyle: FontStyle.italic,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.teal,
+                      ),),
                     Switch(
+                      focusColor: Colors.teal,
+                      activeColor: Colors.blue,
+                      inactiveTrackColor: Colors.teal,
                       value: _cadastrar,
                       onChanged: (bool valor){
                         setState(() {
@@ -265,7 +278,14 @@ class _LoginState extends State<Login> {
                         });
                       },
                     ),
-                    Text("Cadastrar"),
+                    Text("Cadastrar",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontFamily: 'Arial',
+//                        fontStyle: FontStyle.italic,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.blue,
+                      ),),
                   ],
                 ),
                 BotaoCustomizado(

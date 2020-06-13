@@ -32,10 +32,15 @@ class ItemAnuncio extends StatelessWidget {
             SizedBox(
               width: 100,
               height: 100,
-              child: Image.network(
-                anuncio.fotos[0],
-                fit: BoxFit.cover,
-              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.network(
+                  anuncio.fotos[0],
+                  fit: BoxFit.cover,
+//                  height: 150.0,
+//                  width: 100.0,
+                ),
+              )
             ),
             Expanded(
               flex: 3,
