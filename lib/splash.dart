@@ -23,6 +23,7 @@ class _SplashState extends State<Splash> {
   Widget build(BuildContext context) {
 
     return new MaterialApp(
+        debugShowCheckedModeBanner: false,
       home: new Scaffold(
         body: new Container(
           padding: const EdgeInsets.all(8.0),

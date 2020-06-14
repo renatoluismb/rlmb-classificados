@@ -60,8 +60,8 @@ class _EditarAnuncioState extends State<EditarAnuncio> {
 //  }
   Future _selecionarImagemGaleria() async {
 
-    if (_listaImagens.length == 3) {
-      mostraMsg('É permitido no máximo de 3 fotos por anúncio!');
+    if (_listaImagens.length + _anuncio.fotos.length >= 3 ) {
+      mostraMsg('É permitido no máximo de 3 fotos por anúncio! Você já possuia ' + _anuncio.fotos.length.toString() + ' fotos cadastradas.');
       return;
     } else {
       File imagemSelecionada = await ImagePicker.pickImage(source: ImageSource.gallery);

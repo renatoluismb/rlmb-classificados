@@ -10,6 +10,7 @@ import 'package:cvag/util/Configuracoes.dart';
 import 'package:cvag/views/widgets/ItemAnuncio.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:firebase_admob/firebase_admob.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class Anuncios extends StatefulWidget {
   @override
@@ -17,6 +18,8 @@ class Anuncios extends StatefulWidget {
 }
 
 class _AnunciosState extends State<Anuncios> {
+
+  final TextEditingController _pesquisa = TextEditingController();
 
  MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
 //    keywords: <String>['flutterio', 'beautiful apps', 'games', 'business', 'health'],
@@ -84,6 +87,7 @@ class _AnunciosState extends State<Anuncios> {
 
   String _itemSelecionadoEstado;
   String _itemSelecionadoCategoria;
+  String _result;
 
   _escolhaMenuItem(String itemEscolhido){
 
@@ -140,7 +144,6 @@ class _AnunciosState extends State<Anuncios> {
   }
 
   Future<Stream<QuerySnapshot>> _adicionarListenerAnuncios() async {
-    print('caiu aqui');
 
     Firestore db = Firestore.instance;
     Stream<QuerySnapshot> stream = db
@@ -164,6 +167,10 @@ class _AnunciosState extends State<Anuncios> {
     }
     if( _itemSelecionadoCategoria != null ){
       query = query.where("categoria", isEqualTo: _itemSelecionadoCategoria);
+    }
+    if( _pesquisa != null ){
+      print(_pesquisa.text);
+      query = query.where('titulo', isGreaterThanOrEqualTo: _pesquisa.text.toUpperCase().substring(0, 3));
     }
 
     Stream<QuerySnapshot> stream = query.snapshots();
@@ -285,7 +292,7 @@ class _AnunciosState extends State<Anuncios> {
                 );
               }).toList();
             },
-          )
+          ),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -352,48 +359,74 @@ class _AnunciosState extends State<Anuncios> {
 //        ),
 //      ),
       body: Container(
-    child: RefreshIndicator(
+//    child: RefreshIndicator(
         child: Column(children: <Widget>[
 
           Row(children: <Widget>[
 
-//            Expanded(
-//              child: DropdownButtonHideUnderline(
-//                  child: Center(
-//                    child: DropdownButton(
-//                      iconEnabledColor: temaPadrao.primaryColor,
-//                      value: _itemSelecionadoEstado,
-//                      items: _listaItensDropEstados,
-//                      style: TextStyle(
-//                        fontSize: 22,
-//                        color: Colors.black
-//                      ),
-//                      onChanged: (estado){
-//                        setState(() {
-//                          _itemSelecionadoEstado = estado;
-//                          _filtrarAnuncios();
-//                        });
-//                      },
-//                    ),
-//                  )
-//              ),
-//            ),
+            Expanded(
+        child: Center(
+              child: TextFormField(
+                controller: _pesquisa,
+        decoration: InputDecoration(
+        contentPadding: EdgeInsets.fromLTRB(32, 16, 8, 16),
+          hintText:"Pesquisar...",
+          filled: true,
+          suffixIcon: IconButton(
+              icon: Icon(Icons.search),
+              onPressed: () {
+                _filtrarAnuncios();
+              }),
+          prefixIcon: IconButton(
+              iconSize: 14.0,
+              icon: new Icon(MdiIcons.eraser, color: Colors.black45),
+              onPressed: () {
+                _pesquisa.text = '';
+//                _adicionarListenerAnuncios();
+              }),
+          fillColor: Colors.white,
+          focusedBorder: OutlineInputBorder(
+               borderRadius: new BorderRadius.all(new Radius.circular(30.0)),
+              borderSide: BorderSide(color: Colors.white, width: 0.0),
+            ),
+            enabledBorder: OutlineInputBorder(
+             borderRadius: new BorderRadius.all(new Radius.circular(30.0)),
+             borderSide: BorderSide(color: Colors.white, width: 0.0),
+            ),
+            ),
+                style: TextStyle(fontSize: 13),
+//                controller: _emailController,
+                validator: (String value) {
+                  if (value.isEmpty) {
+                    return 'Por favor, preeencha seu e-mail.';
+                  }
+                  return null;
+                },
+              )),),
 
 //            Container(
-//              color: Colors.grey[200],
-//              width: 2,
+//              color: Colors.white,
+//              width: 1,
 //              height: 60,
 //            ),
 
+
             Expanded(
+    child: Container(
+    padding: EdgeInsets.symmetric(horizontal: 10.0),
+    decoration: BoxDecoration(
+      borderRadius: new BorderRadius.all(new Radius.circular(30.0)),
+    border: Border.all(
+    color: Colors.white, style: BorderStyle.solid, width: 0.00),
+    ),
               child: DropdownButtonHideUnderline(
                   child: Center(
                     child: DropdownButton(
-                      iconEnabledColor: Colors.teal,
+                      iconEnabledColor: Colors.black,
                       value: _itemSelecionadoCategoria,
                       items: _listaItensDropCategorias,
                       style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 14,
                           color: Colors.black
                       ),
                       onChanged: (categoria){
@@ -409,7 +442,7 @@ class _AnunciosState extends State<Anuncios> {
 
 
 
-          ],),
+            )],),
 
           StreamBuilder(
             stream: _controler.stream,
@@ -465,8 +498,8 @@ class _AnunciosState extends State<Anuncios> {
 
         ]
         ),
-        onRefresh: _adicionarListenerAnuncios
-    ),
+//        onRefresh: _adicionarListenerAnuncios
+//    ),
       ),
     );
   }

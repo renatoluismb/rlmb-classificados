@@ -12,6 +12,7 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_open_whatsapp/flutter_open_whatsapp.dart';
 import 'package:intl/intl.dart';
+import 'package:share_social_media_plugin/share_social_media_plugin.dart';
 
 class DetalhesAnuncio extends StatefulWidget {
 
