@@ -508,6 +508,7 @@ class _EditarAnuncioState extends State<EditarAnuncio> {
                 ),
 
               BotaoCustomizado(
+                cor: Colors.green,
                 texto: "Atualizar anúncio",
                 onPressed: (){
                   if( _formKey.currentState.validate() ){

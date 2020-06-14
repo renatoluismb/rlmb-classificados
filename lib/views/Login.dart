@@ -47,6 +47,7 @@ class _LoginState extends State<Login> {
   bool _cadastrar = false;
   String _mensagemErro = "";
   String _textoBotao = "Entrar";
+  Color _corBotao = Colors.blue;
 
   _cadastrarUsuario(Usuario usuario){
 
@@ -199,6 +200,7 @@ class _LoginState extends State<Login> {
 
   @override
   Widget build(BuildContext context) {
+    FocusScope.of(context).requestFocus(new FocusNode());
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
@@ -255,25 +257,31 @@ class _LoginState extends State<Login> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text("Logar",
+                    Text("Entrar",
                       style: TextStyle(
                         fontSize: 18,
                         fontFamily: 'Baloo',
 //                        fontStyle: FontStyle.italic,
-                        fontWeight: FontWeight.w900,
+                        fontWeight: FontWeight.w800,
                         color: Colors.teal,
                       ),),
                     Switch(
                       focusColor: Colors.teal,
                       activeColor: Colors.blue,
+                      activeTrackColor: Colors.blue,
+//                      inactiveThumbColor: Colors.teal,
+//                      inactiveThumbColor: Colors.teal,
                       inactiveTrackColor: Colors.teal,
                       value: _cadastrar,
                       onChanged: (bool valor){
                         setState(() {
                           _cadastrar = valor;
                           _textoBotao = "Entrar";
+                          _corBotao = Colors.teal;
                           if( _cadastrar ){
                             _textoBotao = "Cadastrar";
+                            _corBotao = Colors.blue;
+
                           }
                         });
                       },
@@ -281,15 +289,16 @@ class _LoginState extends State<Login> {
                     Text("Cadastrar",
                       style: TextStyle(
                         fontSize: 18,
-                        fontFamily: 'Arial',
+                        fontFamily: 'Baloo',
 //                        fontStyle: FontStyle.italic,
-                        fontWeight: FontWeight.w900,
+                        fontWeight: FontWeight.w800,
                         color: Colors.blue,
                       ),),
                   ],
                 ),
                 BotaoCustomizado(
                   texto: _textoBotao,
+                  cor: _corBotao,
                   onPressed: (){
                     _validarCampos();
                   },
@@ -304,7 +313,7 @@ class _LoginState extends State<Login> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(6)
                   ),
-                  color: Colors.blueAccent,
+                  color: Color(0xFF00486b),
                   padding: EdgeInsets.fromLTRB(32, 16, 32, 16),
                   onPressed: (){
                     Navigator.pushReplacementNamed(context, "/anuncios");

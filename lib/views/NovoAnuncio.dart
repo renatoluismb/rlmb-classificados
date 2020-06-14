@@ -456,6 +456,7 @@ class _NovoAnuncioState extends State<NovoAnuncio> {
                 ),
 
               BotaoCustomizado(
+                cor: Colors.green,
                 texto: "Cadastrar anúncio",
                 onPressed: (){
                   if( _formKey.currentState.validate() ){

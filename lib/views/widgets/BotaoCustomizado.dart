@@ -4,10 +4,12 @@ class BotaoCustomizado extends StatelessWidget {
 
   final String texto;
   final Color corTexto;
+  final Color cor;
   final VoidCallback onPressed;
 
   BotaoCustomizado({
     @required this.texto,
+    @required this.cor,
     this.corTexto = Colors.white,
     this.onPressed
 });
@@ -24,7 +26,7 @@ class BotaoCustomizado extends StatelessWidget {
             color: this.corTexto, fontSize: 16
         ),
       ),
-      color: Colors.teal,
+      color: this.cor,
       padding: EdgeInsets.fromLTRB(32, 16, 32, 16),
       onPressed: this.onPressed,
     );

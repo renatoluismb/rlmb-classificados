@@ -174,8 +174,11 @@ class _MeusAnunciosState extends State<MeusAnuncios> {
                           context: context,
                           builder: (context){
                             return AlertDialog(
-                              title: Text("Confirmar"),
-                              content: Text("Deseja realmente excluir o anúncio?"),
+                              title: Text("Confirmar", style: TextStyle(
+                                  color: Colors.red,
+                                      fontWeight: FontWeight.bold
+                              ),),
+                              content: Text('Deseja realmente excluir o anúncio ' + anuncio.titulo + '?'),
                               actions: <Widget>[
 
                                 FlatButton(

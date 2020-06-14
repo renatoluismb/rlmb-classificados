@@ -280,7 +280,7 @@ class _AnunciosState extends State<Anuncios> {
       appBar: AppBar(
         title: Text("Classificados - Enseada"),
         automaticallyImplyLeading: false,
-        elevation: 0,
+        elevation: 2,
         actions: <Widget>[
           PopupMenuButton<String>(
             onSelected: _escolhaMenuItem,
@@ -382,7 +382,7 @@ class _AnunciosState extends State<Anuncios> {
               icon: new Icon(MdiIcons.eraser, color: Colors.black45),
               onPressed: () {
                 _pesquisa.text = '';
-//                _adicionarListenerAnuncios();
+                _adicionarListenerAnuncios();
               }),
           fillColor: Colors.white,
           focusedBorder: OutlineInputBorder(
