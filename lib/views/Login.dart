@@ -88,18 +88,24 @@ class _LoginState extends State<Login> {
           case 'ERROR_WRONG_PASSWORD':
             mostraMsg('Senha inválida ou nula');
             break;
+          case 'ERROR_EMAIL_ALREADY_IN_USE':
+            mostraMsg('E-mail já cadastrado! Caso não lembre sua senha, escolha Esqueci minha senha e receberá um e-mail para redefinir.');
+            break;
           case 'ERROR_TOO_MANY_REQUESTS':
             mostraMsg('Você efetuou muitas requisições simultâneas. Aguarde um momento.');
             break;
         // ...
           default:
-            print('Case ${e.message} is not yet implemented');
+            print('Case ${e.message} não implementado');
         }
       } else if (Platform.isIOS) {
         print(e);
         switch (e.code) {
           case 'ERROR_USER_NOT_FOUND':
             mostraMsg('Usuário não localizado!');
+            break;
+          case 'ERROR_EMAIL_ALREADY_IN_USE':
+            mostraMsg('E-mail já cadastrado! Caso não lembre sua senha, escolha Esqueci minha senha na tela de login, e receberá um e-mail para redefiní-la.');
             break;
           case 'ERROR_WRONG_PASSWORD':
             mostraMsg('Senha inválida ou nula');
@@ -109,7 +115,7 @@ class _LoginState extends State<Login> {
             break;
         // ...
           default:
-            print('Case ${e.message} is not yet implemented');
+            print('Case ${e.message} não implementado');
         }
       }
       print('The error is $errorType');
@@ -149,7 +155,7 @@ class _LoginState extends State<Login> {
            mostraMsgSucesso('Você receberá um e-mail com as instruções para recuperar sua senha!');
            });
          } catch (error) {
-            print('caiu aqui');
+//            print('caiu aqui');
             print (error.toString());
         }
         } else {
@@ -176,7 +182,6 @@ class _LoginState extends State<Login> {
 
         //cadastrar ou logar
         if( _cadastrar ){
-          print(usuario);
           Navigator.push(context, MaterialPageRoute(
               builder: (context) => TermosAceite(usuario)
           ));

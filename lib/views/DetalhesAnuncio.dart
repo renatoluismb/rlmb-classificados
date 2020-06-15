@@ -74,8 +74,6 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
 
     var msg = Uri.encodeComponent('Olá vizinho, $saudacao! Gostaria de conversar sobre o anúncio: $titulo');
 
-    print(msg);
-
     telefone = "55" + telefone;
     telefone = telefone.toString().replaceAll(' ', "");
     telefone = telefone.toString().replaceAll('(', "");
@@ -230,6 +228,14 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
 //                      fontWeight: FontWeight.bold
                   ),
                 ),
+                Text(
+                  "Categoria: " + dePara(_anuncio.categoria),
+                  style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.black45
+//                      fontWeight: FontWeight.bold
+                  ),
+                ),
 
 
                 Padding(
@@ -360,5 +366,29 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
       ],
       ),
     );
+  }
+}
+
+dePara(categoria) {
+  if (categoria == 'alimentacao') {
+    return 'Alimentação';
+  }
+  if (categoria == 'auto') {
+    return 'Automóveis';
+  }
+  if (categoria == 'eletro') {
+    return 'Eletrônicos';
+  }
+  if (categoria == 'imovel') {
+    return 'Imóveis';
+  }
+  if (categoria == 'moda') {
+    return 'Moda e beleza';
+  }
+  if (categoria == 'moveis') {
+    return 'Móveis';
+  }
+  if (categoria == 'servicos') {
+    return 'Serviços';
   }
 }

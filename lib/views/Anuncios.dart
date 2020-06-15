@@ -52,7 +52,7 @@ class _AnunciosState extends State<Anuncios> {
           // MobileAdEvent.impression
           // MobileAdEvent.leftApplication
         }
-        print("BannerAd event is $event");
+//        print("BannerAd event is $event");
       },
     );
   }
@@ -165,11 +165,9 @@ class _AnunciosState extends State<Anuncios> {
     if( _itemSelecionadoEstado != null ){
       query = query.where("estado", isEqualTo: _itemSelecionadoEstado);
     }
-    if( _itemSelecionadoCategoria != null ){
-      query = query.where("categoria", isEqualTo: _itemSelecionadoCategoria);
+    if( _itemSelecionadoCategoria != null){query = query.where("categoria", isEqualTo: _itemSelecionadoCategoria);
     }
-    if( _pesquisa != null ){
-      print(_pesquisa.text);
+    if( _pesquisa != null && _itemSelecionadoCategoria == null ){
       query = query.where('titulo', isGreaterThanOrEqualTo: _pesquisa.text.toUpperCase().substring(0, 3));
     }
 
@@ -395,13 +393,7 @@ class _AnunciosState extends State<Anuncios> {
             ),
             ),
                 style: TextStyle(fontSize: 13),
-//                controller: _emailController,
-                validator: (String value) {
-                  if (value.isEmpty) {
-                    return 'Por favor, preeencha seu e-mail.';
-                  }
-                  return null;
-                },
+//
               )),),
 
 //            Container(

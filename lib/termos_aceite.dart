@@ -39,23 +39,37 @@ class _TermosAceiteState extends State<TermosAceite> {
 
   }
 
-  _cadastrarUsuario(){
+  _cadastrarUsuario() async {
 
-    print(_usuario.email);
-
-    FirebaseAuth auth = FirebaseAuth.instance;
-
-    auth.createUserWithEmailAndPassword(
-        email: _usuario.email,
-        password: _usuario.senha
-    ).then((firebaseUser){
-
+    try {
+      FirebaseAuth auth = FirebaseAuth.instance;
+      await  auth.createUserWithEmailAndPassword(
+          email: _usuario.email,
+          password: _usuario.senha
+      );
       mostraMsgSucesso('Usuário cadastrado com sucesso!');
-
       //redireciona para tela principal
       Navigator.pushReplacementNamed(context, "/anuncios");
-
-    });
+    } catch (error) {
+      print(error);
+      switch (error.code) {
+        case 'ERROR_USER_NOT_FOUND':
+          mostraMsg('Usuário não localizado!');
+          break;
+        case 'ERROR_WRONG_PASSWORD':
+          mostraMsg('Senha inválida ou nula');
+          break;
+        case 'ERROR_EMAIL_ALREADY_IN_USE':
+          mostraMsg('E-mail já cadastrado! Caso não lembre sua senha, escolha Esqueci minha senha e receberá um e-mail para redefinir.');
+          break;
+        case 'ERROR_TOO_MANY_REQUESTS':
+          mostraMsg('Você efetuou muitas requisições simultâneas. Aguarde um momento.');
+          break;
+      // ...
+        default:
+          print('Case ${error.message} não implementado');
+      }
+    }
 
   }
 
