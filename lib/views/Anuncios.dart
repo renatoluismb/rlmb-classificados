@@ -165,10 +165,15 @@ class _AnunciosState extends State<Anuncios> {
     if( _itemSelecionadoEstado != null ){
       query = query.where("estado", isEqualTo: _itemSelecionadoEstado);
     }
-    if( _itemSelecionadoCategoria != null){query = query.where("categoria", isEqualTo: _itemSelecionadoCategoria);
+    if( _itemSelecionadoCategoria != null){
+      if (_pesquisa == null || _pesquisa.text == '') {
+        query = query.where("categoria", isEqualTo: _itemSelecionadoCategoria);
+      } else {
+        query = query.where("categoria", isEqualTo: _itemSelecionadoCategoria).where('titulo', isGreaterThanOrEqualTo:_pesquisa.text.toUpperCase().substring(0, 3)).where('titulo', isGreaterThanOrEqualTo: _pesquisa.text.toUpperCase().substring(0, 5));
+      }
     }
     if( _pesquisa != null && _itemSelecionadoCategoria == null ){
-      query = query.where('titulo', isGreaterThanOrEqualTo: _pesquisa.text.toUpperCase().substring(0, 3));
+      query = query.where('titulo', isGreaterThanOrEqualTo: _pesquisa.text.toUpperCase().substring(0, 3)).where('titulo', isGreaterThanOrEqualTo: _pesquisa.text.toUpperCase().substring(0, 4));
     }
 
     Stream<QuerySnapshot> stream = query.snapshots();
@@ -377,10 +382,14 @@ class _AnunciosState extends State<Anuncios> {
               }),
           prefixIcon: IconButton(
               iconSize: 14.0,
-              icon: new Icon(MdiIcons.eraser, color: Colors.black45),
+              icon: new Icon(Icons.cancel, color: Colors.black45),
               onPressed: () {
                 _pesquisa.text = '';
-                _adicionarListenerAnuncios();
+                Navigator.popAndPushNamed(context, '/anuncios');
+//                setState(() {
+//                  _listaItensDropCategorias = Configuracoes.getCategorias();
+//                });
+//                _adicionarListenerAnuncios();
               }),
           fillColor: Colors.white,
           focusedBorder: OutlineInputBorder(
