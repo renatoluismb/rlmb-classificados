@@ -160,7 +160,7 @@ class _LoginState extends State<Login> {
         }
         } else {
       setState(() {
-        _mensagemErro = "* Preencha o E-mail válido";
+        _mensagemErro = "* Preencha um E-mail válido";
       });
     }
 
@@ -197,7 +197,7 @@ class _LoginState extends State<Login> {
       }
     } else {
       setState(() {
-        _mensagemErro = "* Preencha o E-mail válido";
+        _mensagemErro = "* Preencha um E-mail válido";
       });
     }
 

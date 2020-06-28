@@ -86,7 +86,9 @@ class _NovoAnuncioState extends State<NovoAnuncio> {
 
     _anuncio.estado = "DF";
 
-    _anuncio.dataInclusao = DateTime.now() as Timestamp;
+    Timestamp t = Timestamp.now();
+
+    _anuncio.dataInclusao = t;
 
     _abrirDialog( _dialogContext );
 
