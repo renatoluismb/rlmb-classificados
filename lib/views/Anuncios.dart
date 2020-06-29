@@ -483,6 +483,21 @@ class _AnunciosState extends State<Anuncios> {
                           List<DocumentSnapshot> anuncios = querySnapshot.documents.toList();
                           DocumentSnapshot documentSnapshot = anuncios[indice];
                           Anuncio anuncio = Anuncio.fromDocumentSnapshot(documentSnapshot);
+                          if(_pesquisa.text.length > 0)
+                            print('>>>>>');
+                            print(anuncio.titulo);
+                          if (anuncio.titulo.toLowerCase().contains(_pesquisa.text.toLowerCase()))
+                            return ItemAnuncio(
+                            anuncio: anuncio,
+                            onTapItem: (){
+                              Navigator.pushNamed(
+                                  context,
+                                  "/detalhes-anuncio",
+                                  arguments: anuncio
+                              );
+                            },
+                          );
+                          if(_pesquisa.text.length == 0)
 
                           return ItemAnuncio(
                             anuncio: anuncio,
