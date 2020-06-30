@@ -55,6 +55,10 @@ class Configuracoes {
         DropdownMenuItem(child: Text("Imóveis"), value: "imovel",)
     );
 
+    itensDropCategorias.add(
+        DropdownMenuItem(child: Text("Livros"), value: "livros",)
+    );
+
 
     itensDropCategorias.add(
         DropdownMenuItem(child: Text("Moda e beleza"), value: "moda",)
@@ -62,6 +66,10 @@ class Configuracoes {
 
     itensDropCategorias.add(
         DropdownMenuItem(child: Text("Móveis"), value: "moveis",)
+    );
+
+    itensDropCategorias.add(
+        DropdownMenuItem(child: Text("Outros"), value: "outros",)
     );
 
     itensDropCategorias.add(

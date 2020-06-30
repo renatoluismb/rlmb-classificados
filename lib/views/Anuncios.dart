@@ -102,6 +102,9 @@ class _AnunciosState extends State<Anuncios> {
       case "Deslogar" :
         _deslogarUsuario();
         break;
+      case "Termos de Uso" :
+        Navigator.pushNamed(context, "/termos");
+        break;
 
     }
 
@@ -123,13 +126,14 @@ class _AnunciosState extends State<Anuncios> {
 
     if( usuarioLogado == null ){
       itensMenu = [
-        "Entrar / Cadastrar"
+        "Entrar / Cadastrar", "Termos de Uso"
       ];
     }else{
       itensMenu = [
-        "Meus anúncios", "Deslogar"
+        "Meus anúncios", "Deslogar", "Termos de Uso"
       ];
     }
+
 
   }
 
@@ -266,7 +270,7 @@ class _AnunciosState extends State<Anuncios> {
           Navigator.popAndPushNamed(context, "/login");
         break;
       case 3:
-        Navigator.popAndPushNamed(context, "/termos");
+        Navigator.popAndPushNamed(context, "/apps");
         break;
     }
     setState(() {
@@ -322,8 +326,8 @@ class _AnunciosState extends State<Anuncios> {
               title: Text('Entrar')
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.assignment),
-              title: Text('Termos de Uso')
+              icon: Icon(Icons.add_to_photos),
+              title: Text('Outros Apps', style: TextStyle(color: Colors.blueAccent),)
           )
         ],
         onTap: _onTap,

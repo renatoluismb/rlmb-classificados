@@ -1,6 +1,7 @@
 
 import 'package:cvag/termos.dart';
 import 'package:cvag/termos_aceite.dart';
+import 'package:cvag/views/Apps.dart';
 import 'package:cvag/views/EditarAnuncio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -48,6 +49,10 @@ class RouteGenerator {
       case "/termos-aceite" :
         return MaterialPageRoute(
             builder: (_) => TermosAceite(args)
+        );
+      case "/apps" :
+        return MaterialPageRoute(
+            builder: (_) => Apps()
         );
       default:
         _erroRota();

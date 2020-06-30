@@ -382,11 +382,17 @@ dePara(categoria) {
   if (categoria == 'imovel') {
     return 'Imóveis';
   }
+  if (categoria == 'livros') {
+    return 'Livros';
+  }
   if (categoria == 'moda') {
     return 'Moda e beleza';
   }
   if (categoria == 'moveis') {
     return 'Móveis';
+  }
+  if (categoria == 'outros') {
+    return 'Outros';
   }
   if (categoria == 'servicos') {
     return 'Serviços';
