@@ -15,6 +15,14 @@ class Apps extends StatefulWidget {
 final nome = TextEditingController();
 
 class _AppsState extends State<Apps> {
+
+  String urlLocalizacaoIOS = '';
+  String urlLocalizacaoAndroid = '';
+  String urlQuizIOS = '';
+  String urlQuizAndroid = '';
+  String urlReceitasIOS = '';
+  String urlReceitasAndroid = '';
+
   final GlobalKey<FormState> _formKey = new GlobalKey<FormState>();
 
   @override

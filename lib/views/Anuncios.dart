@@ -267,7 +267,11 @@ class _AnunciosState extends State<Anuncios> {
         }
         break;
       case 2:
+        if (usuarioLogado != null) {
+          _deslogarUsuario();
+        } else {
           Navigator.popAndPushNamed(context, "/login");
+        }
         break;
       case 3:
         Navigator.popAndPushNamed(context, "/apps");
@@ -321,14 +325,20 @@ class _AnunciosState extends State<Anuncios> {
             icon: new Icon(Icons.chrome_reader_mode),
             title: new Text('Meus Anúncios'),
           ),
+          if (usuarioLogado != null)
           BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              title: Text('Entrar')
+              icon: Icon(Icons.exit_to_app),
+              title: Text('Sair')
           ),
+          if (usuarioLogado == null)
+            BottomNavigationBarItem(
+                icon: Icon(Icons.person),
+                title: Text('Entrar')
+            ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.add_to_photos),
-              title: Text('Outros Apps', style: TextStyle(color: Colors.blueAccent),)
-          )
+              icon: Icon(Icons.add_to_photos, color: Colors.teal,),
+              title: Text('Outros Apps', style: TextStyle(color: Colors.teal),)
+          ),
         ],
         onTap: _onTap,
       ),
