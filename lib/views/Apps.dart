@@ -30,6 +30,7 @@ class _AppsState extends State<Apps> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
+            resizeToAvoidBottomPadding: false,
             appBar: AppBar(
               backgroundColor: Color(0xFF00486b),
               title: Text("Outros Aplicativos"),
@@ -38,9 +39,12 @@ class _AppsState extends State<Apps> {
                   onPressed: (){Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Anuncios()));}
               ),
             ),
-            body: Column(children: <Widget>[
+              body: SingleChildScrollView(
+
+                  child: Column(
+                  children: <Widget>[
               Container(
-              padding: EdgeInsets.fromLTRB(10, 1, 10, 1),
+//              padding: EdgeInsets.fromLTRB(10, 1, 10, 1),
               height: 260,
               width: double.maxFinite,
               child: Card(
@@ -92,7 +96,7 @@ class _AppsState extends State<Apps> {
               ),
             ),
                   Container(
-              padding: EdgeInsets.fromLTRB(10, 1, 10, 1),
+//              padding: EdgeInsets.fromLTRB(10, 1, 10, 1),
               height: 260,
               width: double.maxFinite,
               child: Card(
@@ -144,7 +148,7 @@ class _AppsState extends State<Apps> {
               ),
             ),
               Container(
-                padding: EdgeInsets.fromLTRB(10, 1, 10, 1),
+//                padding: EdgeInsets.fromLTRB(10, 1, 10, 1),
                 height: 260,
                 width: double.maxFinite,
                 child: Card(
@@ -195,7 +199,7 @@ class _AppsState extends State<Apps> {
                   ),
                 ),
               ),
-    ])));
+    ]))));
   }
   Widget logoApple() {
     return Padding(
@@ -241,7 +245,7 @@ class _AppsState extends State<Apps> {
             RichText(
               textAlign: TextAlign.left,
               text: TextSpan(
-                text: '\nCentral de Localização',
+                text: '\n   Central de Localização',
                 style: TextStyle(
                   color: Colors.blue,
                   fontSize: 28,

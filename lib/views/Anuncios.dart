@@ -19,6 +19,9 @@ class Anuncios extends StatefulWidget {
 
 class _AnunciosState extends State<Anuncios> {
 
+  Icon icone = Icon(Icons.person);
+  String texto = 'Entrar';
+
   final TextEditingController _pesquisa = TextEditingController();
 
 // MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
@@ -128,10 +131,18 @@ class _AnunciosState extends State<Anuncios> {
       itensMenu = [
         "Entrar / Cadastrar", "Termos de Uso"
       ];
+      setState(() {
+        icone = Icon(Icons.person);
+        texto = 'Entrar';
+      });
     }else{
       itensMenu = [
         "Meus anúncios", "Deslogar", "Termos de Uso"
       ];
+      setState(() {
+    icone =  Icon(Icons.exit_to_app);
+    texto = 'Sair';
+      });
     }
 
 
@@ -267,11 +278,7 @@ class _AnunciosState extends State<Anuncios> {
         }
         break;
       case 2:
-        if (usuarioLogado != null) {
-          _deslogarUsuario();
-        } else {
           Navigator.popAndPushNamed(context, "/login");
-        }
         break;
       case 3:
         Navigator.popAndPushNamed(context, "/apps");
@@ -325,16 +332,10 @@ class _AnunciosState extends State<Anuncios> {
             icon: new Icon(Icons.chrome_reader_mode),
             title: new Text('Meus Anúncios'),
           ),
-          if (usuarioLogado != null)
           BottomNavigationBarItem(
-              icon: Icon(Icons.exit_to_app),
-              title: Text('Sair')
+              icon: icone,
+              title: Text(texto)
           ),
-          if (usuarioLogado == null)
-            BottomNavigationBarItem(
-                icon: Icon(Icons.person),
-                title: Text('Entrar')
-            ),
           BottomNavigationBarItem(
               icon: Icon(Icons.add_to_photos, color: Colors.teal,),
               title: Text('Outros Apps', style: TextStyle(color: Colors.teal),)
