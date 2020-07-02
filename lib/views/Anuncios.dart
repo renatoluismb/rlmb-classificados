@@ -167,7 +167,6 @@ class _AnunciosState extends State<Anuncios> {
         .snapshots();
 
     stream.listen((dados){
-      print(dados);
       _controler.add(dados);
     });
 
@@ -193,7 +192,6 @@ class _AnunciosState extends State<Anuncios> {
     }
 
     Stream<QuerySnapshot> stream = query.snapshots();
-    print(stream);
     stream.listen((dados){
       print(dados.documents.length);
       if (dados.documents.length > 0) {
