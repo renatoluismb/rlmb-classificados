@@ -446,7 +446,7 @@ class _EditarAnuncioState extends State<EditarAnuncio> {
                   ),
                 ),
 
-
+                if (_itemSelecionadoCategoria != 'doacao')
                 Padding(
                   padding: EdgeInsets.only(bottom: 15),
                   child: InputCustomizado(
@@ -493,15 +493,16 @@ class _EditarAnuncioState extends State<EditarAnuncio> {
                   padding: EdgeInsets.only(bottom: 15),
                   child: InputCustomizado(
                     controller: descricaoController,
-                    hint: "Descrição (200 caracteres)",
+                    hint: "Descrição (500 caracteres)",
                     onSaved: (descricao){
                       _anuncio.descricao = descricao;
                     },
                     maxLines: null,
+                    type: TextInputType.multiline,
                     validator: (valor){
                       return Validador()
                           .add(Validar.OBRIGATORIO, msg: "Campo obrigatório")
-                          .maxLength(200, msg: "Máximo de 200 caracteres")
+                          .maxLength(500, msg: "Máximo de 500 caracteres")
                           .valido(valor);
                     },
                   ),

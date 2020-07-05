@@ -242,15 +242,17 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
                   padding: EdgeInsets.symmetric(vertical: 16),
                   child: Divider(),
                 ),
-
-              Text(
-                "R\$ ${_anuncio.preco}",
-                style: TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold,
-                  color: temaPadrao.primaryColor
-                ),
-              ),
+                if ( _anuncio.preco != null )
+                  Text(
+                    "R\$ ${_anuncio.preco}",
+                    style: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold,
+                        color: temaPadrao.primaryColor
+                    ),
+                  ),
+                if ( _anuncio.preco == null )
+                  Text("Doação", style: TextStyle(color: Colors.green),),
 
               Text(
                 "${_anuncio.titulo}",
@@ -375,6 +377,9 @@ dePara(categoria) {
   }
   if (categoria == 'auto') {
     return 'Automóveis';
+  }
+  if (categoria == 'doacao') {
+    return 'Doações';
   }
   if (categoria == 'eletro') {
     return 'Eletrônicos';

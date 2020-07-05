@@ -52,6 +52,10 @@ class Configuracoes {
     );
 
     itensDropCategorias.add(
+        DropdownMenuItem(child: Text("Doações"), value: "doacao",)
+    );
+
+    itensDropCategorias.add(
         DropdownMenuItem(child: Text("Imóveis"), value: "imovel",)
     );
 
