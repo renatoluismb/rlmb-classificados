@@ -148,6 +148,7 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
         ListView(children: <Widget>[
 
           SizedBox(
+
             height: 250,
             child:  CarouselSlider(
               items: _getListaImagens(),

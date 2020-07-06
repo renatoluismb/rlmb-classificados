@@ -56,8 +56,8 @@ class ItemAnuncio extends StatelessWidget {
                       fontWeight: FontWeight.bold
                   ),
                   ),
-                    if ( anuncio.preco != null )Text("R\$ ${anuncio.preco}"),
-                    if ( anuncio.preco == null )Text("Doação", style: TextStyle(color: Colors.green),),
+                    if ( anuncio.preco != null )Text("R\$ ${anuncio.preco}", style: TextStyle(color: Colors.blueGrey)),
+                    if ( anuncio.preco == null )Text("Doação", style: TextStyle(color: Colors.blueAccent)),
                 ],),
               ),
             ),
