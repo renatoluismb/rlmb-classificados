@@ -19,7 +19,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-5071554554343382~5112157157</string>
 	<key>LSApplicationQueriesSchemes</key>
@@ -28,12 +28,33 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSAllowsArbitraryLoadsForMedia</key>
+		<true/>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<true/>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Podemos utilizar o Apple Music, por favor?</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Podemos utilizar o calendário, por favor?</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Podemos utilizar a sua câmera, por favor?</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Can I use the mic please?</string>
+	<string>Precisamos acessar sua câmera para inserir a foto. Podemos utilizar a sua câmera, por favor?</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Podemos utilizar os contatos, por favor?</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Podemos utilizar a sua localização, por favor?</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Podemos utilizar a sua localização, por favor?</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Podemos utilizar o sensor de movimentos, por favor?</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Podemos ter acesso a sua galeria de fotos?</string>
+	<string>Precisamos acessar sua galeria de fotos para inserir a foto.Podemos ter acesso a sua galeria de fotos?</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Podemos utilizar o Reconhecimento de Fala, por favor?</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
@@ -58,5 +79,11 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>aps-environment</key>
+	<string>development</string>
+	<key>com.apple.developer.applesignin</key>
+	<array>
+		<string>Default</string>
+	</array>
 </dict>
 </plist>

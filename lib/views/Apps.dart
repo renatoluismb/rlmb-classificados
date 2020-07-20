@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:cvag/views/Anuncios.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -12,6 +14,21 @@ class Apps extends StatefulWidget {
   @override
   _AppsState createState() => new _AppsState();
 }
+var plataforma;
+
+//void main() {
+//  // Get the operating system as a string.
+//  String os = Platform.operatingSystem;
+//  // Or, use a predicate getter.
+//  if (Platform.isIOS) {
+//    plataforma = 'IOS';
+//  } else {
+//    plataforma = 'Android';
+//  }
+//  print('>>>>>');
+//  print(plataforma);
+//}
+
 final nome = TextEditingController();
 
 class _AppsState extends State<Apps> {
@@ -22,6 +39,19 @@ class _AppsState extends State<Apps> {
   String urlQuizAndroid = '';
   String urlReceitasIOS = '';
   String urlReceitasAndroid = '';
+
+  @override
+  initState() {
+    super.initState();
+
+    if (Platform.isIOS) {
+      plataforma = 'IOS';
+    } else {
+      plataforma = 'Android';
+    }
+    print('>>>>>');
+    print(plataforma);
+  }
 
   final GlobalKey<FormState> _formKey = new GlobalKey<FormState>();
 
@@ -69,22 +99,7 @@ class _AppsState extends State<Apps> {
                                   Column(
                                     children: <Widget>[app1()],
                                   ),
-                                  Row(
-                                    children: <Widget>[
-                                      logoApple(),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      Spacer(),
-                                      logoGoogle(),
-                                      SizedBox(
-                                        width: 10,
-                                      ),
-                                      SizedBox(
-                                        width: 20,
-                                      )
-                                    ],
-                                  ),
+                                  logoApp(),
                                 ],
                               )),
                         ],
@@ -121,22 +136,7 @@ class _AppsState extends State<Apps> {
                                   Column(
                                     children: <Widget>[app2()],
                                   ),
-                                  Row(
-                                    children: <Widget>[
-                                      logoApple(),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      Spacer(),
-                                      logoGoogle(),
-                                      SizedBox(
-                                        width: 10,
-                                      ),
-                                      SizedBox(
-                                        width: 20,
-                                      )
-                                    ],
-                                  ),
+                                  logoApp(),
                                 ],
                               )),
                         ],
@@ -173,22 +173,7 @@ class _AppsState extends State<Apps> {
                                     Column(
                                       children: <Widget>[app3()],
                                     ),
-                                    Row(
-                                      children: <Widget>[
-                                        logoApple(),
-                                        SizedBox(
-                                          height: 10,
-                                        ),
-                                        Spacer(),
-                                        logoGoogle(),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
-                                        SizedBox(
-                                          width: 20,
-                                        )
-                                      ],
-                                    ),
+                                    logoApp(),
                                   ],
                                 )),
                           ],
@@ -201,11 +186,12 @@ class _AppsState extends State<Apps> {
               ),
     ]))));
   }
-  Widget logoApple() {
+  Widget logoApp() {
+    if (plataforma == 'IOS' ) {
     return Padding(
-      padding: const EdgeInsets.only(left: 12.0),
+      padding: const EdgeInsets.only(top: 10.0),
       child:  Align(
-        alignment: Alignment.topRight,
+        alignment: Alignment.center,
         child: GestureDetector(
           child: Image.asset('assets/apple.png',
               width: 160,
@@ -217,24 +203,42 @@ class _AppsState extends State<Apps> {
           },
         )
     )
-    );
+    ); }
+    else {
+      return Padding(
+          padding: const EdgeInsets.only(left: 0.0),
+          child:  Align(
+              alignment: Alignment.center,
+              child: GestureDetector(
+                child: Image.asset('assets/google.png',
+                    width: 160,
+                    height: 48,
+                    fit:BoxFit.fill
+                ),
+                onTap: (){
+                  print('google');
+                },
+              )
+          )
+      );
+    }
   }
 
-  Widget logoGoogle() {
-    return Align(
-      alignment: Alignment.topRight,
-        child: GestureDetector(
-      child: Image.asset('assets/google.png',
-        width: 160,
-        height: 65,
-        fit:BoxFit.fill
-    ),
-          onTap: (){
-            print('google');
-          },
-    )
-    );
-  }
+//  Widget logoGoogle() {
+//    return Align(
+//      alignment: Alignment.topRight,
+//        child: GestureDetector(
+//      child: Image.asset('assets/google.png',
+//        width: 160,
+//        height: 65,
+//        fit:BoxFit.fill
+//    ),
+//          onTap: (){
+//            print('google');
+//          },
+//    )
+//    );
+//  }
   Widget app1() {
     return Align(
       alignment: Alignment.centerLeft,
@@ -274,7 +278,8 @@ class _AppsState extends State<Apps> {
                           fontSize: 12,
                           fontWeight: FontWeight.bold)),
                   TextSpan(
-                      text: '                    Baixe agora mesmo!!!!',
+
+                      text: '                          Baixe agora mesmo!!!!',
                       style: TextStyle(
                           color: Colors.red,
                           fontStyle: FontStyle.normal,
@@ -327,7 +332,7 @@ class _AppsState extends State<Apps> {
                           fontSize: 12,
                           fontWeight: FontWeight.bold)),
                   TextSpan(
-                      text: '                    Baixe agora mesmo!!!!',
+                      text: '                          Baixe agora mesmo!!!!',
                       style: TextStyle(
                           color: Colors.red,
                           fontStyle: FontStyle.normal,
@@ -380,7 +385,7 @@ class _AppsState extends State<Apps> {
                           fontSize: 12,
                           fontWeight: FontWeight.bold)),
                   TextSpan(
-                      text: '                    Baixe agora mesmo!!!!',
+                      text: '                          Baixe agora mesmo!!!!',
                       style: TextStyle(
                           color: Colors.red,
                           fontStyle: FontStyle.normal,
