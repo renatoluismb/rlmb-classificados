@@ -24,59 +24,59 @@ class _AnunciosState extends State<Anuncios> {
 
   final TextEditingController _pesquisa = TextEditingController();
 
- MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
-//    keywords: <String>['flutterio', 'beautiful apps', 'games', 'business', 'health'],
-//    contentUrl: 'https://flutter.io',
-    childDirected: false,
-    testDevices: <String>[],
-  );
+// MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
+////    keywords: <String>['flutterio', 'beautiful apps', 'games', 'business', 'health'],
+////    contentUrl: 'https://flutter.io',
+//    childDirected: false,
+//    testDevices: <String>[],
+//  );
 
-  BannerAd myBanner;
-  InterstitialAd myInterstitial;
-  int clicks = 0;
+//  BannerAd myBanner;
+//  InterstitialAd myInterstitial;
+//  int clicks = 0;
+//
+//  void startBanner() {
+//    var unit = "";
+//    if (Platform.isIOS) {
+//      unit =  'ca-app-pub-5071554554343382/6583955267';
+//    } else if (Platform.isAndroid) {
+//      unit = 'ca-app-pub-5071554554343382/8951383718';
+//    }
+//    myBanner = BannerAd(
+//      adUnitId: unit,
+//      size: AdSize.smartBanner,
+////      targetingInfo: targetingInfo,
+//      listener: (MobileAdEvent event) {
+//        if (event == MobileAdEvent.opened) {
+//          // MobileAdEvent.opened
+//          // MobileAdEvent.clicked
+//          // MobileAdEvent.closed
+//          // MobileAdEvent.failedToLoad
+//          // MobileAdEvent.impression
+//          // MobileAdEvent.leftApplication
+//        }
+////        print("BannerAd event is $event");
+//      },
+//    );
+//  }
 
-  void startBanner() {
-    var unit = "";
-    if (Platform.isIOS) {
-      unit =  'ca-app-pub-5071554554343382/6583955267';
-    } else if (Platform.isAndroid) {
-      unit = 'ca-app-pub-5071554554343382/8951383718';
-    }
-    myBanner = BannerAd(
-      adUnitId: unit,
-      size: AdSize.smartBanner,
-//      targetingInfo: targetingInfo,
-      listener: (MobileAdEvent event) {
-        if (event == MobileAdEvent.opened) {
-          // MobileAdEvent.opened
-          // MobileAdEvent.clicked
-          // MobileAdEvent.closed
-          // MobileAdEvent.failedToLoad
-          // MobileAdEvent.impression
-          // MobileAdEvent.leftApplication
-        }
-//        print("BannerAd event is $event");
-      },
-    );
-  }
-
-  void displayBanner() {
-    if (Platform.isIOS) {
-      myBanner
-        ..load()
-        ..show(
-          anchorOffset: 890.0,
-          anchorType: AnchorType.bottom,
-        );
-    } else if (Platform.isAndroid) {
-      myBanner
-        ..load()
-        ..show(
-          anchorOffset: 810.0,
-          anchorType: AnchorType.bottom,
-        );
-    }
-  }
+//  void displayBanner() {
+//    if (Platform.isIOS) {
+//      myBanner
+//        ..load()
+//        ..show(
+//          anchorOffset: 890.0,
+//          anchorType: AnchorType.bottom,
+//        );
+//    } else if (Platform.isAndroid) {
+//      myBanner
+//        ..load()
+//        ..show(
+//          anchorOffset: 810.0,
+//          anchorType: AnchorType.bottom,
+//        );
+//    }
+//  }
 
   FirebaseUser usuarioLogado;
 
@@ -206,20 +206,20 @@ class _AnunciosState extends State<Anuncios> {
   @override
   void initState() {
 
-    FirebaseAdMob.instance
-        .initialize(appId: "ca-app-pub-5071554554343382~5112157157");
-    super.initState();
+//    FirebaseAdMob.instance
+//        .initialize(appId: "ca-app-pub-5071554554343382~5112157157");
+//    super.initState();
 
 
 //    startBanner();
 //    displayBanner();
 
 
-    Timer(Duration(seconds: 4), () {
-      myInterstitial = buildInterstitial()
-        ..load()
-        ..show();
-    });
+//    Timer(Duration(seconds: 4), () {
+//      myInterstitial = buildInterstitial()
+//        ..load()
+//        ..show();
+//    });
 
     _carregarItensDropdown();
     _verificarUsuarioLogado();
@@ -227,38 +227,38 @@ class _AnunciosState extends State<Anuncios> {
 
   }
 
- InterstitialAd buildInterstitial() {
-    var unit = "";
-    if (Platform.isIOS) {
-      unit =  'ca-app-pub-5071554554343382/3385315972';
-    } else if (Platform.isAndroid) {
-      unit = 'ca-app-pub-5071554554343382/2230116591';
-    }
-   return InterstitialAd(
-       adUnitId: unit,
-       targetingInfo: MobileAdTargetingInfo(testDevices: <String>[]),
-       listener: (MobileAdEvent event) {
-         if (event == MobileAdEvent.loaded) {
-           myInterstitial?.show();
-         }
-         if (event == MobileAdEvent.clicked || event == MobileAdEvent.closed) {
-           myInterstitial.dispose();
-           clicks = 0;
-         }
-       });
- }
+// InterstitialAd buildInterstitial() {
+//    var unit = "";
+//    if (Platform.isIOS) {
+//      unit =  'ca-app-pub-5071554554343382/3385315972';
+//    } else if (Platform.isAndroid) {
+//      unit = 'ca-app-pub-5071554554343382/2230116591';
+//    }
+//   return InterstitialAd(
+//       adUnitId: unit,
+//       targetingInfo: MobileAdTargetingInfo(testDevices: <String>[]),
+//       listener: (MobileAdEvent event) {
+//         if (event == MobileAdEvent.loaded) {
+//           myInterstitial?.show();
+//         }
+//         if (event == MobileAdEvent.clicked || event == MobileAdEvent.closed) {
+//           myInterstitial.dispose();
+//           clicks = 0;
+//         }
+//       });
+// }
 
   @override
   void dispose() {
-
-    try {
-
-      myBanner?.dispose();
-      myInterstitial?.dispose();
-
-    } catch (ex) {
-      print(ex);
-    }
+//
+//    try {
+//
+//      myBanner?.dispose();
+//      myInterstitial?.dispose();
+//
+//    } catch (ex) {
+//      print(ex);
+//    }
 
     super.dispose();
   }

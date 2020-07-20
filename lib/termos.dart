@@ -1,4 +1,8 @@
+import 'dart:async';
+import 'dart:io';
+
 import 'package:cvag/views/Anuncios.dart';
+import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_html/flutter_html.dart';
@@ -15,6 +19,111 @@ class Termos extends StatefulWidget {
 final nome = TextEditingController();
 
 class _TermosState extends State<Termos> {
+
+  MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
+//    keywords: <String>['flutterio', 'beautiful apps', 'games', 'business', 'health'],
+//    contentUrl: 'https://flutter.io',
+    childDirected: false,
+    testDevices: <String>[],
+  );
+
+  BannerAd myBanner;
+  InterstitialAd myInterstitial;
+  int clicks = 0;
+
+  void startBanner() {
+    var unit = "";
+    if (Platform.isIOS) {
+      unit =  'ca-app-pub-5071554554343382/6583955267';
+    } else if (Platform.isAndroid) {
+      unit = 'ca-app-pub-5071554554343382/8951383718';
+    }
+    myBanner = BannerAd(
+      adUnitId: unit,
+      size: AdSize.smartBanner,
+//      targetingInfo: targetingInfo,
+      listener: (MobileAdEvent event) {
+        if (event == MobileAdEvent.opened) {
+          // MobileAdEvent.opened
+          // MobileAdEvent.clicked
+          // MobileAdEvent.closed
+          // MobileAdEvent.failedToLoad
+          // MobileAdEvent.impression
+          // MobileAdEvent.leftApplication
+        }
+//        print("BannerAd event is $event");
+      },
+    );
+  }
+
+  void displayBanner() {
+    if (Platform.isIOS) {
+      myBanner
+        ..load()
+        ..show(
+          anchorOffset: 890.0,
+          anchorType: AnchorType.bottom,
+        );
+    } else if (Platform.isAndroid) {
+      myBanner
+        ..load()
+        ..show(
+          anchorOffset: 810.0,
+          anchorType: AnchorType.bottom,
+        );
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    FirebaseAdMob.instance
+        .initialize(appId: "ca-app-pub-5071554554343382~5112157157");
+    super.initState();
+    Timer(Duration(seconds: 4), () {
+      myInterstitial = buildInterstitial()
+        ..load()
+        ..show();
+    });
+  }
+
+  @override
+  void dispose() {
+
+    try {
+
+      myBanner?.dispose();
+      myInterstitial?.dispose();
+
+    } catch (ex) {
+      print(ex);
+    }
+
+    super.dispose();
+  }
+
+  InterstitialAd buildInterstitial() {
+    var unit = "";
+    if (Platform.isIOS) {
+      unit =  'ca-app-pub-5071554554343382/3385315972';
+    } else if (Platform.isAndroid) {
+      unit = 'ca-app-pub-5071554554343382/2230116591';
+    }
+    return InterstitialAd(
+        adUnitId: unit,
+        targetingInfo: MobileAdTargetingInfo(testDevices: <String>[]),
+        listener: (MobileAdEvent event) {
+          if (event == MobileAdEvent.loaded) {
+            myInterstitial?.show();
+          }
+          if (event == MobileAdEvent.clicked || event == MobileAdEvent.closed) {
+            myInterstitial.dispose();
+            clicks = 0;
+          }
+        });
+  }
+
+
   final GlobalKey<FormState> _formKey = new GlobalKey<FormState>();
 
   @override
