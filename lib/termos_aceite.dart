@@ -116,7 +116,7 @@ class _TermosAceiteState extends State<TermosAceite> {
           ),
           // Setup the icon
           subtitle: Text(
-            "O aplicativo é totalmente gratuíto tanto para plataformas Android como IOS. Alguns anúncios são exibidos durante o uso do aplicativo. Esses anúncios são aleatórios e geridos pela plataforma de hospedagem, não possuindo qualquer interferência do desenvolvedor.",
+            "O aplicativo é totalmente gratuíto. Alguns anúncios são exibidos durante o uso do aplicativo. Esses anúncios são aleatórios e geridos pela plataforma de hospedagem, não possuindo qualquer interferência do desenvolvedor.",
             textAlign: TextAlign.left,
             style: TextStyle(color: Colors.black54, fontSize: 13.0),
           ),

@@ -43,6 +43,7 @@ dependencies:
   material_design_icons_flutter: ^4.0.5345
   intl: ^0.16.1
   firebase_messaging: ^6.0.16
+  flutter_image_compress: ^0.7.0
 
 dev_dependencies:
   flutter_launcher_icons: "^0.7.5"

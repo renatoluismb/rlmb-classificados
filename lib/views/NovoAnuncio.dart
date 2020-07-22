@@ -50,7 +50,7 @@ class _NovoAnuncioState extends State<NovoAnuncio> {
       mostraMsg('É permitido no máximo de 3 fotos por anúncio!');
       return;
     } else {
-      File imagemSelecionada = await ImagePicker.pickImage(source: ImageSource.gallery);
+      File imagemSelecionada = await ImagePicker.pickImage(source: ImageSource.gallery, imageQuality: 50);
 
       if( imagemSelecionada != null ){
         setState(() {

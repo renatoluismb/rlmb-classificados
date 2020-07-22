@@ -22,6 +22,8 @@ class _AnunciosState extends State<Anuncios> {
   Icon icone = Icon(Icons.person);
   String texto = 'Entrar';
 
+  int contador = 0;
+
   final TextEditingController _pesquisa = TextEditingController();
 
 // MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
@@ -160,15 +162,20 @@ class _AnunciosState extends State<Anuncios> {
 
   Future<Stream<QuerySnapshot>> _adicionarListenerAnuncios() async {
 
-    Firestore db = Firestore.instance;
-    Stream<QuerySnapshot> stream = db
-        .collection("anuncios")
-        .orderBy("dataInclusao", descending: true)
-        .snapshots();
+    Stream<QuerySnapshot> stream;
 
-    stream.listen((dados){
-      _controler.add(dados);
-    });
+   if (stream == null) {
+     print('caiu aqui');
+     Firestore db = Firestore.instance;
+     stream = db
+         .collection("anuncios")
+         .orderBy("dataInclusao", descending: true)
+         .snapshots();
+
+     stream.listen((dados) {
+       _controler.add(dados);
+     });
+   }
 
   }
 
