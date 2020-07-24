@@ -64,7 +64,7 @@ class _EditarAnuncioState extends State<EditarAnuncio> {
       mostraMsg('É permitido no máximo de 3 fotos por anúncio! Você já possuia ' + _anuncio.fotos.length.toString() + ' fotos cadastradas.');
       return;
     } else {
-      File imagemSelecionada = await ImagePicker.pickImage(source: ImageSource.gallery);
+      File imagemSelecionada = await ImagePicker.pickImage(source: ImageSource.gallery, imageQuality: 40);
 
       if( imagemSelecionada != null ){
         setState(() {

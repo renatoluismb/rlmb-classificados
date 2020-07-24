@@ -72,7 +72,7 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
       saudacao = 'Boa noite';
     }
 
-    var msg = Uri.encodeComponent('Olá vizinho, $saudacao! Gostaria de conversar sobre o anúncio: $titulo');
+    var msg = Uri.encodeComponent('Olá vizinho(a). $saudacao! Gostaria de conversar sobre o anúncio: $titulo');
 
     telefone = "55" + telefone;
     telefone = telefone.toString().replaceAll(' ', "");

@@ -283,7 +283,7 @@ class _AnunciosState extends State<Anuncios> {
         }
         break;
       case 2:
-          Navigator.popAndPushNamed(context, "/login");
+        _deslogarUsuario();
         break;
       case 3:
         Navigator.popAndPushNamed(context, "/apps");
