@@ -165,7 +165,6 @@ class _AnunciosState extends State<Anuncios> {
     Stream<QuerySnapshot> stream;
 
    if (stream == null) {
-     print('caiu aqui');
      Firestore db = Firestore.instance;
      stream = db
          .collection("anuncios")
@@ -200,7 +199,6 @@ class _AnunciosState extends State<Anuncios> {
 
     Stream<QuerySnapshot> stream = query.snapshots();
     stream.listen((dados){
-      print(dados.documents.length);
       if (dados.documents.length > 0) {
         _controler.add(dados);
       } else {
@@ -504,8 +502,6 @@ class _AnunciosState extends State<Anuncios> {
                           DocumentSnapshot documentSnapshot = anuncios[indice];
                           Anuncio anuncio = Anuncio.fromDocumentSnapshot(documentSnapshot);
                           if(_pesquisa.text.length > 0)
-                            print('>>>>>');
-                            print(anuncio.titulo);
                           if (anuncio.titulo.toLowerCase().contains(_pesquisa.text.toLowerCase()))
                             return ItemAnuncio(
                             anuncio: anuncio,

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:open_appstore/open_appstore.dart';
 
 
 class Apps extends StatefulWidget {
@@ -99,7 +100,7 @@ class _AppsState extends State<Apps> {
                                   Column(
                                     children: <Widget>[app1()],
                                   ),
-                                  logoApp(),
+                                  logoApp('localizacao'),
                                 ],
                               )),
                         ],
@@ -136,7 +137,7 @@ class _AppsState extends State<Apps> {
                                   Column(
                                     children: <Widget>[app2()],
                                   ),
-                                  logoApp(),
+                                  logoApp('receitas'),
                                 ],
                               )),
                         ],
@@ -173,7 +174,7 @@ class _AppsState extends State<Apps> {
                                     Column(
                                       children: <Widget>[app3()],
                                     ),
-                                    logoApp(),
+                                    logoApp('quiz'),
                                   ],
                                 )),
                           ],
@@ -186,24 +187,33 @@ class _AppsState extends State<Apps> {
               ),
     ]))));
   }
-  Widget logoApp() {
+  Widget logoApp(appId) {
     if (plataforma == 'IOS' ) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 10.0),
-      child:  Align(
-        alignment: Alignment.center,
-        child: GestureDetector(
-          child: Image.asset('assets/apple.png',
-              width: 160,
-              height: 48,
-              fit:BoxFit.fill
-          ),
-          onTap: (){
-            print('apple');
-          },
-        )
-    )
-    ); }
+      return Padding(
+          padding: const EdgeInsets.only(top: 10.0),
+          child:  Align(
+              alignment: Alignment.center,
+              child: GestureDetector(
+                child: Image.asset('assets/apple.png',
+                    width: 160,
+                    height: 48,
+                    fit:BoxFit.fill
+                ),
+                onTap: (){
+                  if (appId == 'localizacao') {
+                    print(appId);
+                    OpenAppstore.launch(androidAppId: 'com.rlmb.localizacao', iOSAppId: '1524516010');
+                  }
+                  if (appId == 'receitas') {
+                    OpenAppstore.launch(androidAppId: 'com.rlmb.receitas', iOSAppId: '1525901510');
+                  }
+                  if (appId == 'quiz') {
+                    OpenAppstore.launch(androidAppId: 'com.rlmb.quiz', iOSAppId: '1524698831');
+                  }
+                },
+              )
+          )
+      ); }
     else {
       return Padding(
           padding: const EdgeInsets.only(left: 0.0),
@@ -216,7 +226,16 @@ class _AppsState extends State<Apps> {
                     fit:BoxFit.fill
                 ),
                 onTap: (){
-                  print('google');
+                  if (appId == 'localizacao') {
+                    print(appId);
+                    OpenAppstore.launch(androidAppId: 'com.rlmb.localizacao', iOSAppId: '1524516010');
+                  }
+                  if (appId == 'receitas') {
+                    OpenAppstore.launch(androidAppId: 'com.rlmb.receitas', iOSAppId: '1525901510');
+                  }
+                  if (appId == 'quiz') {
+                    OpenAppstore.launch(androidAppId: 'com.rlmb.quiz', iOSAppId: '1524698831');
+                  }
                 },
               )
           )

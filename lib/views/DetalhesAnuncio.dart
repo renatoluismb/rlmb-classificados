@@ -72,7 +72,7 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
       saudacao = 'Boa noite';
     }
 
-    var msg = Uri.encodeComponent('Olá vizinho(a). $saudacao! Gostaria de conversar sobre o anúncio: $titulo');
+    var msg = Uri.encodeComponent('Olá vizinho(a). $saudacao! Encontrei o seu anuncio pelo aplicativo *Classificados Enseada*. Gostaria de conversar sobre o anúncio: $titulo');
 
     telefone = "55" + telefone;
     telefone = telefone.toString().replaceAll(' ', "");
@@ -109,7 +109,7 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
 
   @override
   Widget build(BuildContext context) {
-
+    final double height = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
         title: Text("Anúncio"),
@@ -149,12 +149,12 @@ class _DetalhesAnuncioState extends State<DetalhesAnuncio> {
 
           SizedBox(
 
-            height: 250,
+            height: 320,
             child:  CarouselSlider(
               items: _getListaImagens(),
               carouselController: buttonCarouselController,
               options: CarouselOptions(
-                height: 250,
+                height: height,
                 aspectRatio: 0.5,
                 viewportFraction: 0.8,
                 initialPage: 0,
